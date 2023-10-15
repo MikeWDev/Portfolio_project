@@ -26,7 +26,12 @@ Paragraph:
 ### 04 COLORS
 
 Primary:
-Tints:  
+#1f3133
+#c4bdad
+        
+Tints:
+#7ec6cc49 
+#b5eaee 
 Sheades:
 Accents:
 Greys:
@@ -37,7 +42,8 @@ Greys:
 
     Default: 9px
 
-##
+#################
+
 /*#####################
 ###SECTION WELCOME###
 #######################*/
@@ -68,11 +74,16 @@ Greys:
   margin-bottom: auto;
 }
 .btn--welcome {
-  background-color: rgba(126, 198, 204, 0.288);
+  background-color: #7ec6cc49;
   color: #b5eaee;
 }
-.name {
-}
+
 /*#####################
 ###SECTION HERO###
 #######################*/
+.section-hero {
+  background-color: #7ec6cc49;
+}
+.hero-page {
+  height: 100vh;
+}

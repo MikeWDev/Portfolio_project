@@ -1,11 +1,11 @@
 import { useState } from "react";
 import WelcomePage from "./pages/welcomePage";
-import HomePage from "./pages/homePage";
+import HeroPage from "./pages/heroPage";
 function App() {
   return (
     <>
       <WelcomePage />
-      <HomePage />
+      <HeroPage />
     </>
   );
 }

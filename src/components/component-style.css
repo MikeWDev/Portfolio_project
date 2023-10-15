@@ -41,6 +41,9 @@ Greys:
 
 \*/
 @import url("https://api.fontshare.com/v2/css?f[]=neco@500,700,400&display=swap");
+/*##############
+###Reusable clases###
+################*/
 
 * {
   padding: 0;
@@ -59,6 +62,7 @@ html {
 .grid {
   display: grid;
 }
+
 /*##############
 ###Button###
 ################*/
