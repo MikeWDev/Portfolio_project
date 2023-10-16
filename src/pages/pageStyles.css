@@ -86,4 +86,6 @@ Greys:
 }
 .hero-page {
   height: 100vh;
+  display: grid;
+  background-color: aqua;
 }
