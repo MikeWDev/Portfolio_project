@@ -52,6 +52,7 @@ Greys:
 }
 html {
   font-size: 62.5%; /* 1rem = 10px*/
+  font-family: "Neco", serif;
 }
 
 .container {
@@ -63,6 +64,9 @@ html {
   display: grid;
 }
 
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
 /*##############
 ###Button###
 ################*/
@@ -75,4 +79,59 @@ html {
   font-weight: 700;
   border-style: none;
   font-family: "Neco", serif;
+}
+/*##############
+###Navbar###
+################*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(127, 164, 167, 0.1);
+  border-bottom: 1px solid #b5eaee7d;
+}
+.nav-links li {
+  display: inline-block;
+  font-size: 2.4rem;
+  padding: 0 3.6rem;
+  font-weight: 500;
+}
+.nav-links > li > a {
+  text-decoration: none;
+  /* color: #b5eaee; */
+  color: #7fa4a7;
+  transition: all 0.3s ease 0s;
+}
+.nav-links > li > a:hover {
+  color: #b5eaee;
+}
+
+.logo-img {
+  height: 100px;
+}
+.img-box {
+  padding-right: 170px;
+}
+.contact-me-box {
+  font-size: 2.4rem;
+  padding: 0 3.6rem;
+  border-left: 1px solid #b5eaee7d;
+  display: flex;
+  align-items: stretch;
+  background-color: rgba(127, 164, 167, 0.1);
+  align-self: stretch;
+  transition: all 0.3s ease 0s;
+}
+.contact-me-box:hover {
+  background-color: rgba(127, 164, 167, 0.3);
+}
+.contact-me-box a:hover {
+  color: #b5eaee;
+}
+.contact-me-box a {
+  text-decoration: none;
+  color: #7fa4a7;
+  align-self: center;
+  font-weight: 500;
 }

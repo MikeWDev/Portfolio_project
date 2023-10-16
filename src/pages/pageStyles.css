@@ -27,7 +27,7 @@ Paragraph:
 
 Primary:
 #1f3133
-#c4bdad
+#c4bdad - text color
         
 Tints:
 #7ec6cc49 
@@ -82,10 +82,18 @@ Greys:
 ###SECTION HERO###
 #######################*/
 .section-hero {
-  background-color: #7ec6cc49;
+  background-color: #1f3133;
 }
 .hero-page {
   height: 100vh;
-  display: grid;
-  background-color: aqua;
+}
+.hero-slogans h1 {
+  font-size: 6.2rem;
+  font-family: "Neco", serif;
+  color: #c4bdad;
+  line-height: 6.4rem;
+}
+.paragraph-hero {
+  font-size: 2rem;
+  color: #898479;
 }
