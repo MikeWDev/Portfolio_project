@@ -8,21 +8,25 @@ function HeroPage() {
       <section className="section-hero">
         <NavBar />
         <div className="hero-page container grid grid--2-col">
-          <div className="hero-slogans">
-            <h1>CREATIVE</h1> <br />
-            <h1>UNIQUE</h1> <br />
-            <h1>SIMPLE</h1>
-            <br />
-            <p className="paragraph-hero">
-              Just some random catchy text in here Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Esse accusantium nesciunt ex tempore
-              ullam veritatis minus quibusdam excepturi maiores quos, vel
-              voluptas, eum nostrum officiis cumque fugiat earum. Voluptate,
-              quibusdam!
-            </p>
+          <div className="hero-content">
+            <div className="slogans-hero">
+              <h1>CREATIVE</h1> <br />
+              <h1>UNIQUE</h1> <br />
+              <h1>SIMPLE</h1>
+              <br />
+              <p className="paragraph-hero">
+                My name is Michal. I am a full-stack developer based in Reading
+                UK. I design and code beautiful and accessible websites of all
+                kind.
+              </p>
+              <p className="grad-paragraph">
+                Are u ready to enter digital word?
+              </p>
+            </div>
           </div>
           <div className="pic-container">
             <img
+              className="hero-img"
               src="src\assets\img\goha1.jpg"
               alt="The picture of the developer"
             />

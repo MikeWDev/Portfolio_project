@@ -88,8 +88,9 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(127, 164, 167, 0.1);
+  background-color: rgba(127, 164, 167, 0.102);
   border-bottom: 1px solid #b5eaee7d;
+  height: 8rem;
 }
 .nav-links li {
   display: inline-block;
@@ -108,7 +109,7 @@ header {
 }
 
 .logo-img {
-  height: 100px;
+  height: 40px;
 }
 .img-box {
   padding-right: 170px;

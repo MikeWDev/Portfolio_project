@@ -87,7 +87,7 @@ Greys:
 .hero-page {
   height: 100vh;
 }
-.hero-slogans h1 {
+.hero-content h1 {
   font-size: 6.2rem;
   font-family: "Neco", serif;
   color: #c4bdad;
@@ -96,4 +96,32 @@ Greys:
 .paragraph-hero {
   font-size: 2rem;
   color: #898479;
+}
+.pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img {
+  border-right: solid 1px #b5eaee7d;
+  border-bottom: solid 1px #b5eaee7d;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.hero-content {
+  display: grid;
+  margin-top: 8rem;
+}
+.slogans-hero {
+  align-items: center;
+  border-left: solid 1px #b5eaee7d;
+  border-top: solid 1px #b5eaee7d;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.grad-paragraph {
+  color: #898479;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 30px;
 }
