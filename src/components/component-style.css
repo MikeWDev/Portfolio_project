@@ -44,7 +44,9 @@ Greys:
 /*##############
 ###Reusable clases###
 ################*/
-
+body {
+  background-color: #1f3133;
+}
 * {
   padding: 0;
   margin: 0;
@@ -60,12 +62,18 @@ html {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+.flex-container {
+  display: flex;
+}
 .grid {
   display: grid;
 }
 
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
 }
 /*##############
 ###Button###
@@ -135,4 +143,35 @@ header {
   color: #7fa4a7;
   align-self: center;
   font-weight: 500;
+}
+/*##############
+###Card###
+################*/
+.card-container {
+  border: 1px solid #b5eaee7d;
+  padding: 1.2rem;
+  text-align: center;
+}
+.icon-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+.title-box h2 {
+  font-size: 3rem;
+  font-family: inherit;
+  color: #c4bdad;
+  display: inline-block;
+}
+.content-box p {
+  font-size: 2rem;
+  color: #c4bdad;
+}
+.icon,
+ion-icon {
+  height: 4rem;
+  stroke: #c4bdad;
+  color: #c4bdad;
+  font-size: 4rem;
+  margin-right: 10px;
 }

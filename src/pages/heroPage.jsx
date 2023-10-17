@@ -3,6 +3,9 @@ import "../pages/pageStyles.css";
 import "../components/component-style.css";
 import NavBar from "../components/navBar";
 function HeroPage() {
+  const introduction =
+    "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites of all kind";
+
   return (
     <>
       <section className="section-hero">
@@ -14,11 +17,7 @@ function HeroPage() {
               <h1>UNIQUE</h1> <br />
               <h1>SIMPLE</h1>
               <br />
-              <p className="paragraph-hero">
-                My name is Michal. I am a full-stack developer based in Reading
-                UK. I design and code beautiful and accessible websites of all
-                kind.
-              </p>
+              <p className="paragraph-hero">{introduction}</p>
               <p className="grad-paragraph">
                 Are u ready to enter digital word?
               </p>
@@ -33,7 +32,6 @@ function HeroPage() {
           </div>
         </div>
       </section>
-      ;
     </>
   );
 }

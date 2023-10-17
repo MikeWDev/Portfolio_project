@@ -83,6 +83,7 @@ Greys:
 #######################*/
 .section-hero {
   background-color: #1f3133;
+  margin-bottom: 6.4rem;
 }
 .hero-page {
   height: 100vh;
@@ -124,4 +125,26 @@ Greys:
   font-size: 2rem;
   font-weight: 700;
   margin-top: 30px;
+}
+/*#####################
+###WID SECTION###
+#######################*/
+.wid-heading {
+  font-family: inherit;
+  font-size: 3.6rem;
+  color: #c4bdad;
+  margin-bottom: 6.4rem;
+}
+.wid-heading h2 {
+  border-bottom: solid 1px #b5eaee7d;
+  display: inline-block;
+}
+.wid {
+  gap: 20px;
+}
+.wid-section {
+  background-color: #1f3133;
+  border-top: solid 1px #b5eaee7d;
+  padding-top: 6.4rem !important;
+  padding-bottom: 6.4rem !important;
 }
