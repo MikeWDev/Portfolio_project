@@ -158,6 +158,10 @@ Greys:
 .about-img img {
   height: 400px;
   align-self: center;
+  margin-right: 1.6rem;
+}
+.about-img--profile {
+  margin-right: 1.6rem;
 }
 .about-content {
   grid-template-rows: repeat(2 1fr);

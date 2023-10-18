@@ -1,5 +1,6 @@
 import React from "react";
 
+///ICONS
 export const designSvg = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -20,3 +21,5 @@ export const designSvg = (
 export const frontEnd = <ion-icon name="logo-react"></ion-icon>;
 
 export const backEnd = <ion-icon name="server-outline"></ion-icon>;
+
+//DATA

@@ -204,3 +204,24 @@ ion-icon {
   font-weight: 400;
   text-decoration: underline;
 }
+/*##############
+###SKILL-CARD###
+################*/
+.skill-card {
+  grid-template-rows: 0.5fr 2fr;
+
+  padding: 2rem;
+}
+.skill-title {
+  align-self: center;
+  justify-self: center;
+}
+.skill-title h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #c4bdad;
+}
+.skill-points li {
+  color: #c4bdad;
+  font-size: 1.8rem;
+}

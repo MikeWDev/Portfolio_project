@@ -1,5 +1,7 @@
 import React from "react";
 import DataLine from "../components/dataLine";
+import SkillCard from "../components/skillCard";
+
 function AboutMePage() {
   const aboutMeDics =
     "Hello there! 👋 I'm a passionate and results-driven full-stack developer with a keen interest in crafting robust, user-centric solutions. I thrive on turning complex problems into elegant, intuitive, and efficient solutions.";
@@ -9,7 +11,11 @@ function AboutMePage() {
       <section className="about-me-section">
         <div className="about-page container grid">
           <div className="grid about-img">
-            <img src="src\assets\img\gosia-logo.jpg" alt="" />
+            <img
+              src="src\assets\img\gosia-logo.jpg"
+              className="about-img--profile"
+              alt="Another picture of developer"
+            />
           </div>
 
           <div className="grid about-content">
@@ -27,7 +33,11 @@ function AboutMePage() {
               </div>
             </div>
 
-            <div className="about-skills grid">My skills</div>
+            <div className="about-skills grid">
+              <SkillCard />
+              <SkillCard />
+              <SkillCard />
+            </div>
           </div>
         </div>
       </section>
