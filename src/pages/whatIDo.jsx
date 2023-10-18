@@ -16,6 +16,9 @@ function WhatIDoPage() {
 
   return (
     <>
+      <div className="wid-heading">
+        <h2>What i do?</h2>
+      </div>
       <section className=" wid-section container">
         <div className="grid grid--3-col container wid">
           <Card svg={designSvg} title={designTitle} content={designContent} />

@@ -1,6 +1,4 @@
 import React from "react";
-import "../pages/pageStyles.css";
-import "../components/component-style.css";
 import ButtonFull from "../components/buttonFull";
 
 function WelcomePage() {

@@ -1,6 +1,4 @@
 import React from "react";
-import "../pages/pageStyles.css";
-import "../components/component-style.css";
 import NavBar from "../components/navBar";
 function HeroPage() {
   const introduction =

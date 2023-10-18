@@ -144,7 +144,7 @@ Greys:
 }
 .wid-section {
   background-color: #1f3133;
-  border-top: solid 1px #b5eaee7d;
-  padding-top: 6.4rem !important;
+
   padding-bottom: 6.4rem !important;
+  border-bottom: solid 1px #b5eaee7d;
 }
