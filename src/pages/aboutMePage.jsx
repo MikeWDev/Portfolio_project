@@ -1,7 +1,7 @@
 import React from "react";
 import DataLine from "../components/dataLine";
 import SkillCard from "../components/skillCard";
-
+import { FrontEndData, BackEndData, DesignData } from "../components/icons";
 function AboutMePage() {
   const aboutMeDics =
     "Hello there! 👋 I'm a passionate and results-driven full-stack developer with a keen interest in crafting robust, user-centric solutions. I thrive on turning complex problems into elegant, intuitive, and efficient solutions.";
@@ -34,9 +34,9 @@ function AboutMePage() {
             </div>
 
             <div className="about-skills grid">
-              <SkillCard />
-              <SkillCard />
-              <SkillCard />
+              <SkillCard data={FrontEndData} />
+              <SkillCard data={BackEndData} />
+              <SkillCard data={DesignData} />
             </div>
           </div>
         </div>

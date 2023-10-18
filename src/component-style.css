@@ -209,8 +209,10 @@ ion-icon {
 ################*/
 .skill-card {
   grid-template-rows: 0.5fr 2fr;
+  margin: 2rem;
+  border-right: solid 1px #b5eaee7d;
 
-  padding: 2rem;
+  border-left: solid 1px #b5eaee7d;
 }
 .skill-title {
   align-self: center;
@@ -224,4 +226,6 @@ ion-icon {
 .skill-points li {
   color: #c4bdad;
   font-size: 1.8rem;
+  text-align: center;
+  list-style: none;
 }

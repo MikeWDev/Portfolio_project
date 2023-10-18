@@ -23,3 +23,25 @@ export const frontEnd = <ion-icon name="logo-react"></ion-icon>;
 export const backEnd = <ion-icon name="server-outline"></ion-icon>;
 
 //DATA
+
+export const FrontEndData = {
+  title: "Front-End",
+  skill_1: "Html5",
+  skill_2: "Css",
+  skill_3: "JavaScript",
+  skill_4: "React.js",
+};
+export const BackEndData = {
+  title: "Back-End",
+  skill_1: "Node.js",
+  skill_2: "Express.js",
+  skill_3: "MySql",
+  skill_4: "MongoDB",
+};
+export const DesignData = {
+  title: "Web Design",
+  skill_1: "UX",
+  skill_2: "UI",
+  skill_3: "Figma",
+  skill_4: "Responsive design",
+};

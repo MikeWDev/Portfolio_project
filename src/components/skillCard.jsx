@@ -1,25 +1,25 @@
 import React from "react";
 
-function SkillCard() {
+function SkillCard({ data }) {
   return (
     <>
       <div className="skill-card grid">
         <div className="skill-title">
-          <h3>FRONT-END</h3>
+          <h3>{data.title}</h3>
         </div>
         <div className="skill-points grid">
           <ul>
             <li>
-              <p>{props.skill_1}</p>
+              <p>{data.skill_1}</p>
             </li>
             <li>
-              <p>{props.skill_2}</p>
+              <p>{data.skill_2}</p>
             </li>
             <li>
-              <p>{props.skill_3}</p>
+              <p>{data.skill_3}</p>
             </li>
             <li>
-              <p>{props.skill_4}</p>
+              <p>{data.skill_4}</p>
             </li>
           </ul>
         </div>
