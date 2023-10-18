@@ -1,23 +1,33 @@
 import React from "react";
-
+import DataLine from "../components/dataLine";
 function AboutMePage() {
+  const aboutMeDics =
+    "Hello there! 👋 I'm a passionate and results-driven full-stack developer with a keen interest in crafting robust, user-centric solutions. I thrive on turning complex problems into elegant, intuitive, and efficient solutions.";
+
   return (
     <>
       <section className="about-me-section">
-        <div className="about-page container gird">
+        <div className="about-page container grid">
           <div className="grid about-img">
-            <img src="../assets/img/gosia-logo.jpg" alt="" />
+            <img src="src\assets\img\gosia-logo.jpg" alt="" />
           </div>
+
           <div className="grid about-content">
-            <div className="about-text">
+            <div className=" grid about-text">
               <div className="about-disc">
-                {" "}
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab,
-                ipsa at quasi sed vitae dolore? Autem accusamus{" "}
+                <h3>Who am i?</h3>
+                <p>{aboutMeDics}</p>
               </div>
-              <div className="about-adress">Adress</div>
+
+              <div className="about-adress grid">
+                <DataLine name="Age" data="24" />
+                <DataLine name="Residence" data="UK" />
+                <DataLine name="Freelance" data="Available" />
+                <DataLine name="Address" data="Reading, UK" />
+              </div>
             </div>
-            <div className="about-skills">My skills</div>
+
+            <div className="about-skills grid">My skills</div>
           </div>
         </div>
       </section>

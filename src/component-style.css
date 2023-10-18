@@ -175,3 +175,32 @@ ion-icon {
   font-size: 4rem;
   margin-right: 10px;
 }
+/*##############
+###Data-component###
+################*/
+.data-container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-adress div {
+  align-self: center;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+.data-name {
+  align-self: stretch;
+}
+.data-name p {
+  background-color: #7ec6cc49;
+  font-size: 1.8rem;
+  color: #b5eaee;
+  padding: 0.6rem;
+}
+.about-data p {
+  font-size: 1.8rem;
+  color: #b5eaee;
+  padding: 0.6rem;
+  text-decoration: solid;
+  font-weight: 400;
+  text-decoration: underline;
+}
