@@ -73,7 +73,8 @@ Greys:
   margin-bottom: 30px;
 }
 .section-welcome {
-  background: linear-gradient(#181414, #131318, #141519);
+  background-color: #0d0f18;
+  /* background: linear-gradient(#141519, #131318, #181414); */
 }
 
 .btn--welcome {
@@ -85,21 +86,29 @@ Greys:
 ###SECTION HERO###
 #######################*/
 .section-hero {
-  background-color: #1f3133;
-  margin-bottom: 6.4rem;
+  /* margin-bottom: 6.4rem; */
+  width: 100%;
+  height: 100vh;
 }
 .hero-page {
   height: 100vh;
 }
+.background-clip {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
 .hero-content h1 {
   font-size: 6.2rem;
   font-family: "Poppins", serif;
-  color: #c4bdad;
+  color: #fff;
   line-height: 6.4rem;
 }
 .paragraph-hero {
   font-size: 2rem;
-  color: #898479;
+  color: #fff;
 }
 .pic-container {
   display: flex;
@@ -107,8 +116,6 @@ Greys:
   align-items: center;
 }
 .hero-img {
-  border-right: solid 1px #b5eaee7d;
-  border-bottom: solid 1px #b5eaee7d;
   padding-right: 30px;
   padding-bottom: 30px;
 }
@@ -118,13 +125,9 @@ Greys:
 }
 .slogans-hero {
   align-items: center;
-  border-left: solid 1px #b5eaee7d;
-  border-top: solid 1px #b5eaee7d;
-  padding-left: 30px;
-  padding-top: 30px;
 }
 .grad-paragraph {
-  color: #898479;
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
   margin-top: 30px;
@@ -136,20 +139,18 @@ Greys:
   margin-left: 2rem;
   font-family: inherit;
   font-size: 3.6rem;
-  color: #c4bdad;
+  color: #fff;
   margin-bottom: 6.4rem;
 }
 .wid-heading h2 {
-  border-bottom: solid 1px #b5eaee7d;
   display: inline-block;
 }
 .wid {
   gap: 20px;
 }
 .wid-section {
-  background-color: #1f3133;
+  background-color: #0d0f18;
   padding-bottom: 6.4rem !important;
-  border-bottom: solid 1px #b5eaee7d;
   margin-bottom: 6.4rem;
 }
 /*#####################
@@ -157,7 +158,6 @@ Greys:
 #######################*/
 .about-me-section {
   padding-bottom: 6.4rem;
-  border-bottom: solid 1px #b5eaee7d;
 }
 .about-page {
   grid-template-columns: 1fr 2fr;
@@ -178,20 +178,18 @@ Greys:
   grid-template-columns: 1fr 1fr;
 }
 .about-disc {
-  border-top: solid 1px #b5eaee7d;
-  border-left: solid 1px #b5eaee7d;
 }
 .about-disc h3 {
   font-family: inherit;
   font-size: 3rem;
-  color: #c4bdad;
+  color: #fff;
   margin-bottom: 0.8rem;
   padding: 1.2rem;
 }
 .about-disc p {
   font-family: inherit;
   font-size: 1.8rem;
-  color: #c4bdad;
+  color: #fff;
   padding: 1.2rem;
 }
 .about-adress {
@@ -199,6 +197,4 @@ Greys:
 }
 .about-skills {
   grid-template-columns: repeat(3, 1fr);
-  border-right: solid 1px #b5eaee7d;
-  border-bottom: solid 1px #b5eaee7d;
 }

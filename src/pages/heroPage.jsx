@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../components/navBar";
+import videoBg from "../assets/img/bg-vid.mp4";
 function HeroPage() {
   const introduction =
     "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites of all kind";
@@ -7,6 +8,7 @@ function HeroPage() {
   return (
     <>
       <section className="section-hero">
+        <video className="background-clip" src={videoBg} autoPlay muted loop />
         <NavBar />
         <div className="hero-page container grid grid--2-col">
           <div className="hero-content">

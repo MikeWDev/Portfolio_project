@@ -1,6 +1,27 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
 function NavBar() {
+  const [scrolled, setScrolled] = React.useState(false);
+
+  const handleScroll = () => {
+    const offSet = window.scrollY;
+    if (offSet > 200) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+  // const nav = document.querySelector(".nav-box");
+  // const navOffSet = nav.offsetTop;
+  // window.addEventListener("scroll", () => {
+  //   if (window.pageYOffset >= navOffSet) {
+  //     nav.classList.add("sticky");
+  //   } else {
+  //     nav.classList.remove("sticky")
+  //   }
+  // });
+
   return (
     <>
       <div className="nav-box">
