@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <WelcomePage />
-      <HeroPage />
+      {/* <HeroPage />
       <WhatIDoPage />
       <AboutMePage />
-      <RecentProjects />
+      <RecentProjects /> */}
     </>
   );
 }

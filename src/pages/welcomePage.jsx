@@ -5,6 +5,12 @@ function WelcomePage() {
   return (
     <>
       <section className="section-welcome">
+        {/* <video autoPlay muted loop playsInline>
+          <source
+            src="src\assets\img\background-vid.mp4"
+            type="video/mp4"
+          ></source>
+        </video> */}
         <div className="welcome-page container grid">
           <h1>
             Welcome! My name is <br /> <span className="name">Michal</span>

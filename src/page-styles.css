@@ -42,9 +42,17 @@ Greys:
 
     Default: 9px
 
-#################
+    #################
+    New syles for website 
+    Bg color:
+    Font color:
+    Button collor:
 
-/*#####################
+    
+    
+    
+    #################
+    /*#####################
 ###SECTION WELCOME###
 #######################*/
 
@@ -56,8 +64,8 @@ Greys:
 .welcome-page > h1 {
   text-align: center;
   font-size: 5.2rem !important;
-  font-family: "Neco", serif;
-  color: #c4bdad;
+  font-family: "Poppins", serif;
+  color: #fff;
   font-size: 7.4rem;
   /* margin-top: auto; */
   line-height: 8 rem;
@@ -65,17 +73,12 @@ Greys:
   margin-bottom: 30px;
 }
 .section-welcome {
-  background-color: #1f3133;
+  background: linear-gradient(#181414, #131318, #141519);
 }
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: auto;
-}
+
 .btn--welcome {
-  background-color: #7ec6cc49;
-  color: #b5eaee;
+  background-color: #740cdc;
+  color: #fff;
 }
 
 /*#####################
@@ -90,7 +93,7 @@ Greys:
 }
 .hero-content h1 {
   font-size: 6.2rem;
-  font-family: "Neco", serif;
+  font-family: "Poppins", serif;
   color: #c4bdad;
   line-height: 6.4rem;
 }

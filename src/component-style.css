@@ -40,13 +40,11 @@ Greys:
 ### 07 WHITESPACE
 
 \*/
-@import url("https://api.fontshare.com/v2/css?f[]=neco@500,700,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap");
 /*##############
 ###Reusable clases###
 ################*/
-body {
-  background-color: #1f3133;
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -54,7 +52,7 @@ body {
 }
 html {
   font-size: 62.5%; /* 1rem = 10px*/
-  font-family: "Neco", serif;
+  font-family: "Poppins", serif;
 }
 
 .container {
@@ -78,15 +76,20 @@ html {
 /*##############
 ###Button###
 ################*/
-
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+}
 .btn {
-  padding: 1.6rem 4.8rem;
-  border-radius: 100px;
+  padding: 1rem 3.6rem;
+  border-radius: 20px;
   font-family: inherit;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 700;
   border-style: none;
-  font-family: "Neco", serif;
+  font-family: "Poppins", serif;
 }
 /*##############
 ###Navbar###
