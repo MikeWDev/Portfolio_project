@@ -145,7 +145,7 @@ header {
   font-weight: 500;
 }
 /*##############
-###Card###
+###CARD-INFO###
 ################*/
 .card-container {
   border: 1px solid #b5eaee7d;
@@ -229,3 +229,7 @@ ion-icon {
   text-align: center;
   list-style: none;
 }
+
+/*##############
+###RP-CARD###
+################*/
