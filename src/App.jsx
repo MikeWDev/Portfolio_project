@@ -4,6 +4,7 @@ import HeroPage from "./pages/heroPage";
 import WhatIDoPage from "./pages/whatIDo";
 import AboutMePage from "./pages/aboutMePage";
 import RecentProjects from "./pages/mostRecProjects";
+import Footer from "./pages/footer";
 import Cta from "./pages/cta";
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutMePage />
       <RecentProjects />
       <Cta />
+      <Footer></Footer>
     </>
   );
 }

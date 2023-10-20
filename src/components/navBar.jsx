@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import logo from "../assets/img/logo.png";
 
 function NavBar() {
   const [scrolled, setScrolled] = React.useState(false);
@@ -40,11 +41,7 @@ function NavBar() {
             </ul>
           </nav>
           <div className="img-box">
-            <img
-              className="logo-img"
-              src="src\assets\img\gosia-logo.jpg"
-              alt="K development logo"
-            />
+            <img src={logo} className="logo-img" alt="Logo of developer" />
           </div>
           <div className="contact-me-box">
             <a href="#">Contact me </a>

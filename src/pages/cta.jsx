@@ -6,11 +6,15 @@ import {
   twitter,
   message,
 } from "../components/icons";
-
+import ContactForm from "../components/contactForm";
 function Cta() {
   return (
     <>
-      <section className="cta-section">
+      <section className="cta-section container">
+        <div className="cta-title">
+          <h2>Ready to enter digital word?</h2>
+          <h3>Contact me</h3>
+        </div>
         <div className="container grid grid--cta">
           <div className="contact-info grid">
             <div className="phone-box contact-box">
@@ -33,11 +37,8 @@ function Cta() {
           <div className="text-gap">
             <p>OR</p>
           </div>
-          <div className="contact-form">
-            <div>qwertyu</div>
-            <div>qwertyu</div>
-            <div>qwertyu</div>
-            {/* <div className="contact-form--icon">{message}</div> */}
+          <div className="contact-form grid">
+            <ContactForm />
           </div>
         </div>
       </section>

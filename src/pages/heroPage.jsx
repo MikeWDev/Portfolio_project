@@ -19,7 +19,9 @@ function HeroPage() {
               <h1>SIMPLE</h1>
               <br />
               <p className="paragraph-hero">{introduction}</p>
-              <ButtonFull class="btn btn--welcome" text="Check my work" />
+              <div className="hero-btn-box">
+                <ButtonFull class="btn--hero" text="Check out my work" />
+              </div>
             </div>
           </div>
           <div className="pic-container">
