@@ -162,6 +162,9 @@ Greys:
 .about-page {
   grid-template-columns: 1fr 2fr;
   height: 100vh;
+  background-color: rgba(116, 12, 220, 0.137);
+  border-radius: 10px;
+  border: #740cdc solid 1px;
 }
 .about-img img {
   height: 400px;
@@ -177,8 +180,7 @@ Greys:
 .about-text {
   grid-template-columns: 1fr 1fr;
 }
-.about-disc {
-}
+
 .about-disc h3 {
   font-family: inherit;
   font-size: 3rem;
@@ -197,4 +199,29 @@ Greys:
 }
 .about-skills {
   grid-template-columns: repeat(3, 1fr);
+}
+
+/*##############
+###RP-SECTION###
+################*/
+.rp-section {
+  margin-top: 6.4rem;
+}
+.title-con {
+  font-size: 3rem;
+  color: #fff;
+  font-family: inherit;
+  margin-bottom: 0.8rem;
+  border-bottom: #740cdc solid 1px;
+}
+.button-con {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn--rp {
+  background-color: #740cdc;
+  color: #fff;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border-radius: 15px;
 }

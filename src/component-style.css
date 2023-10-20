@@ -247,6 +247,64 @@ ion-icon {
 ###RP-CARD###
 ################*/
 
+.rp-card--grid {
+  grid-template-rows: 1.5fr 0.5fr 0.5fr 1.5fr;
+  row-gap: 2rem;
+}
+.rp-disc p {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.rp-title h3 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.rp-card {
+  border: solid 1px #740cdc;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: rgba(116, 12, 220, 0.137);
+}
+.rp-img {
+  display: flex;
+  align-items: stretch;
+}
+.rp-btn--con {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+  justify-content: flex-end;
+}
+.rp-btn--style {
+  background-color: #740cdc;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.6rem;
+  border: none;
+  font-weight: 700;
+}
+/*##############
+###RP-TAG###
+################*/
+.tag-container p {
+  background-color: #740cdc;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  padding: 0.4rem;
+  font-family: inherit;
+  margin-bottom: 1.2rem;
+}
+.rp-tags {
+  display: flex;
+  gap: 0.8rem;
+}
+
+/*##############
+###MEDIA###
+################*/
+
 @media (min-aspect-ratio) {
   .background-clip {
     width: 100%;

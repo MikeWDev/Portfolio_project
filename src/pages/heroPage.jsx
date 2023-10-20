@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/navBar";
 import videoBg from "../assets/img/bg-vid.mp4";
+import ButtonFull from "../components/buttonFull";
 function HeroPage() {
   const introduction =
     "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites of all kind";
@@ -18,9 +19,7 @@ function HeroPage() {
               <h1>SIMPLE</h1>
               <br />
               <p className="paragraph-hero">{introduction}</p>
-              <p className="grad-paragraph">
-                Are u ready to enter digital word?
-              </p>
+              <ButtonFull class="btn btn--welcome" text="Check my work" />
             </div>
           </div>
           <div className="pic-container">
