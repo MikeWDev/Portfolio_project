@@ -225,3 +225,47 @@ Greys:
   font-size: 1.6rem;
   border-radius: 15px;
 }
+
+/*##############
+###RP-SECTION###
+################*/
+.cta-section {
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+}
+.grid--cta {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 2fr;
+  color: #fff;
+  background-color: rgba(116, 12, 220, 0.137);
+  border-radius: 10px;
+  border: #740cdc solid 1px;
+}
+.contact-info {
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 2rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  padding: 3.2rem;
+}
+.contact-box {
+  display: flex;
+}
+.contact-box p {
+  align-self: center;
+}
+
+.text-gap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.contact-form--icon {
+  color: #740cdc;
+  font-size: 3rem;
+}
+.msg-icon {
+  font-size: 3px !important;
+}

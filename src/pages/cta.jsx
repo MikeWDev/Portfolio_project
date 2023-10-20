@@ -1,0 +1,47 @@
+import React from "react";
+import {
+  whatsApp,
+  eMail,
+  linkedIn,
+  twitter,
+  message,
+} from "../components/icons";
+
+function Cta() {
+  return (
+    <>
+      <section className="cta-section">
+        <div className="container grid grid--cta">
+          <div className="contact-info grid">
+            <div className="phone-box contact-box">
+              {whatsApp}
+              <p>07496481135</p>
+            </div>
+            <div className="email-box contact-box">
+              {eMail}
+              <p>mkocik.dev@gmail.com</p>
+            </div>
+            <div className="linkedin-box contact-box">
+              {linkedIn}
+              <p>fjdfsdjfsjdf</p>
+            </div>
+            <div className="twitter-box contact-box">
+              {twitter}
+              <p>dskfsdkfdsf</p>
+            </div>
+          </div>
+          <div className="text-gap">
+            <p>OR</p>
+          </div>
+          <div className="contact-form">
+            <div>qwertyu</div>
+            <div>qwertyu</div>
+            <div>qwertyu</div>
+            {/* <div className="contact-form--icon">{message}</div> */}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+export default Cta;
