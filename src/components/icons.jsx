@@ -30,6 +30,8 @@ export const linkedIn = <ion-icon name="logo-linkedin"></ion-icon>;
 
 export const twitter = <ion-icon name="logo-twitter"></ion-icon>;
 
+export const instagram = <ion-icon name="logo-instagram"></ion-icon>;
+
 export const message = (
   <svg
     xmlns="http://www.w3.org/2000/svg"

@@ -15,7 +15,7 @@ function App() {
       <AboutMePage />
       <RecentProjects />
       <Cta />
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
