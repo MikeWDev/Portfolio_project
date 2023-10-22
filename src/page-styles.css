@@ -90,9 +90,9 @@ Greys:
   width: 100%;
   height: 100vh;
 }
-.hero-page {
+/* .hero-page {
   height: 100vh;
-}
+} */
 .background-clip {
   width: 100%;
   height: 100%;
@@ -109,15 +109,17 @@ Greys:
 .hero-btn-box {
   display: flex;
   flex-direction: row-reverse;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
 }
 .btn--hero {
   color: #fff;
-  background-color: #740cdc;
+  background-color: rgba(116, 12, 220, 0.258);
   padding: 1.2rem;
   font-size: 2rem;
   font-family: inherit;
   border-radius: 10px;
-  border-style: none;
+  border: #740cdc solid 1px;
   font-weight: 700;
 }
 .paragraph-hero {
@@ -132,6 +134,10 @@ Greys:
 .hero-img {
   padding-right: 30px;
   padding-bottom: 30px;
+}
+.hero-img {
+  height: 45rem;
+  position: absolute;
 }
 .hero-content {
   display: grid;
@@ -155,6 +161,8 @@ Greys:
   font-size: 3.6rem;
   color: #fff;
   margin-bottom: 6.4rem;
+  margin-top: 6.4rem;
+  border-bottom: #740cdc solid 1px;
 }
 .wid-heading h2 {
   display: inline-block;
@@ -170,9 +178,9 @@ Greys:
 /*#####################
 ###ABOUT ME SECTION###
 #######################*/
-.about-me-section {
+/* .about-me-section {
   padding-bottom: 6.4rem;
-}
+} */
 .about-page {
   grid-template-columns: 1fr 2fr;
   height: 100vh;
@@ -185,6 +193,9 @@ Greys:
   align-self: center;
   margin-right: 1.6rem;
 }
+.about-img {
+  border-right: #740cdc solid 1p;
+}
 .about-img--profile {
   margin-right: 1.6rem;
 }
@@ -195,18 +206,24 @@ Greys:
   grid-template-columns: 1fr 1fr;
 }
 
-.about-disc h3 {
+.about-title h3 {
   font-family: inherit;
-  font-size: 3rem;
+  font-size: 5.4rem;
   color: #fff;
-  margin-bottom: 0.8rem;
-  padding: 1.2rem;
+  border-bottom: solid 1px #740cdc;
+}
+.about-title {
+  margin-bottom: 6.4rem;
 }
 .about-disc p {
   font-family: inherit;
   font-size: 1.8rem;
   color: #fff;
-  padding: 1.2rem;
+  padding: 2.4rem;
+}
+.about-disc {
+  display: flex;
+  align-items: center;
 }
 .about-adress {
   grid-template-rows: repeat(4, 1fr);
@@ -226,7 +243,7 @@ Greys:
   font-size: 3rem;
   color: #fff;
   font-family: inherit;
-  margin-bottom: 0.8rem;
+  margin-bottom: 6.4rem;
   border-bottom: #740cdc solid 1px;
 }
 .button-con {
@@ -242,7 +259,7 @@ Greys:
 }
 
 /*##############
-###RP-SECTION###
+###cta-SECTION###
 ################*/
 .cta-section {
   margin-top: 6.4rem;
@@ -264,7 +281,7 @@ Greys:
 .cta-title h3 {
   color: #fff;
   font-size: 3.6rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 6.4rem;
 }
 .contact-info {
   grid-template-rows: repeat(4, 1fr);
@@ -330,12 +347,15 @@ form > * {
 .email {
   gap: 3.3rem;
 }
-
+.submit-btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
 /*##############
 ###RP-SECTION###
 ################*/
 .footer-section {
-  margin-top: 6.4rem;
+  margin-top: 12.8rem;
 }
 .footer-section {
   background-color: rgba(116, 12, 220, 0.2);

@@ -1,5 +1,5 @@
 import React from "react";
-
+import ButtonFull from "./buttonFull";
 function ContactForm() {
   return (
     <>
@@ -24,6 +24,9 @@ function ContactForm() {
           <div className="dm box  ">
             <label htmlFor="">Message:</label>
             <input placeholder="Your messege" type="text" className="message" />
+          </div>
+          <div className="submit-btn-box">
+            <ButtonFull class=" btn--hover btn--hero" text="Submit" />
           </div>
         </form>
       </div>

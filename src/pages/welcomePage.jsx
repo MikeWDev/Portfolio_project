@@ -17,7 +17,7 @@ function WelcomePage() {
             <br /> I am a full-stack web developer
           </h1>
           <div className="btn-container">
-            <ButtonFull text="See more" class="btn btn--welcome" />
+            <ButtonFull text="See more" class="btn btn--welcome btn--hover" />
           </div>
         </div>
       </section>

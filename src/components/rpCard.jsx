@@ -28,8 +28,8 @@ function RpCard(props) {
           </p>
         </div>
         <div className="rp-btn--con">
-          <ButtonFull class="rp-btn--style" text="Visit website" />
-          <ButtonFull class="rp-btn--style" text="See the code" />
+          <ButtonFull class="rp-btn--style btn--hover " text="Visit website" />
+          <ButtonFull class="rp-btn--style btn--hover" text="See the code" />
         </div>
       </div>
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/navBar";
 import videoBg from "../assets/img/bg-vid.mp4";
 import ButtonFull from "../components/buttonFull";
+import Profile1 from "../assets/img/profile1.png";
 function HeroPage() {
   const introduction =
     "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites of all kind";
@@ -20,14 +21,17 @@ function HeroPage() {
               <br />
               <p className="paragraph-hero">{introduction}</p>
               <div className="hero-btn-box">
-                <ButtonFull class="btn--hero" text="Check out my work" />
+                <ButtonFull
+                  class=" btn--hover btn--hero"
+                  text="Check out my work"
+                />
               </div>
             </div>
           </div>
           <div className="pic-container">
             <img
               className="hero-img"
-              src="src\assets\img\goha1.jpg"
+              src={Profile1}
               alt="The picture of the developer"
             />
           </div>

@@ -11,11 +11,12 @@ function RecentProjects() {
           </div>
           <div className="grid grid--3-col">
             <RpCard />
-            <RpCard />
-            <RpCard />
           </div>
           <div className="button-con">
-            <ButtonFull class="btn btn--rp " text="See all projects >" />
+            <ButtonFull
+              class="btn btn--rp btn--hover"
+              text="See all projects >"
+            />
           </div>
         </div>
       </section>
