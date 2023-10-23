@@ -11,11 +11,11 @@ function App() {
     <>
       <WelcomePage />
       <HeroPage />
-      {/* <WhatIDoPage />
-      <AboutMePage /> */}
+      <WhatIDoPage />
+      <AboutMePage />
       <RecentProjects />
-      {/* <Cta />
-      <Footer /> */}
+      <Cta />
+      <Footer />
     </>
   );
 }

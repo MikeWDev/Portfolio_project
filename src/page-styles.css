@@ -181,7 +181,7 @@ Greys:
 .about-me-section {
   /* margin-top: 6.4rem; */
   /* margin-bottom: 6.4rem; */
-  height: calc(100vh+ 6rem);
+  height: calc(100vh + 6rem);
 }
 .about-page {
   grid-template-columns: 1fr 2fr;
@@ -276,8 +276,8 @@ Greys:
 ###cta-SECTION###
 ################*/
 .cta-section {
-  margin-top: 6.4rem;
-  margin-bottom: 6.4rem;
+  height: calc(100vh + 0.6rem);
+  padding-top: 6.4rem;
 }
 .grid--cta {
   display: grid;
@@ -295,14 +295,13 @@ Greys:
 .cta-title h3 {
   color: #fff;
   font-size: 3.6rem;
-  margin-bottom: 6.4rem;
 }
 .contact-info {
   grid-template-rows: repeat(4, 1fr);
   row-gap: 2rem;
   font-family: inherit;
   font-size: 1.8rem;
-  padding: 3.2rem;
+  /* padding: 3.2rem; */
 }
 .contact-box {
   display: flex;
@@ -325,9 +324,9 @@ Greys:
 .msg-icon {
   font-size: 3px !important;
 }
-.contact {
+/* .contact {
   padding: 3.2rem;
-}
+} */
 .contact-from {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
