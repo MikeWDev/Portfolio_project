@@ -3,30 +3,24 @@ import { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
 
 function NavBar() {
-  const [scrolled, setScrolled] = React.useState(false);
+  const [stickyClass, setStickyClass] = useState("");
 
-  const handleScroll = () => {
-    const offSet = window.scrollY;
-    if (offSet > 200) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+    return () => window.removeEventListener("scroll", stickNavbar);
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 600 ? setStickyClass("sticky-nav") : setStickyClass("");
     }
   };
-  // const nav = document.querySelector(".nav-box");
-  // const navOffSet = nav.offsetTop;
-  // window.addEventListener("scroll", () => {
-  //   if (window.pageYOffset >= navOffSet) {
-  //     nav.classList.add("sticky");
-  //   } else {
-  //     nav.classList.remove("sticky")
-  //   }
-  // });
 
   return (
     <>
       <div className="nav-box">
-        <header>
+        <header className={`navbar ${stickyClass}`}>
           <nav>
             <ul className="nav-links">
               <li>

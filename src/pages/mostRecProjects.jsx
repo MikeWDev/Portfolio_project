@@ -5,11 +5,11 @@ function RecentProjects() {
   return (
     <>
       <section className="rp-section ">
-        <div className="container ">
+        <div className="container grid ">
           <div className="title-con">
             <h2>Most recent projects</h2>
           </div>
-          <div className="grid grid--3-col">
+          <div className="grid grid--4-col rp-card-container">
             <RpCard />
           </div>
           <div className="button-con">

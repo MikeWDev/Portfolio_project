@@ -1,18 +1,40 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import NavBar from "../components/navBar";
 import videoBg from "../assets/img/bg-vid.mp4";
 import ButtonFull from "../components/buttonFull";
 import Profile1 from "../assets/img/profile1.png";
 function HeroPage() {
+  const [paddingClass, setPaddingClass] = useState("");
+
+  useEffect(() => {
+    window.addEventListener("scroll", addPaddingClass);
+    return () => window.removeEventListener("scroll", addPaddingClass);
+  }, []);
+
+  const addPaddingClass = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 600 ? setPaddingClass("padding-top") : setPaddingClass("");
+    }
+  };
+
   const introduction =
     "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites of all kind";
 
   return (
     <>
       <section className="section-hero">
-        <video className="background-clip" src={videoBg} autoPlay muted loop />
+        <video
+          className={`background-clip `}
+          src={videoBg}
+          autoPlay
+          muted
+          loop
+        />
+
         <NavBar />
-        <div className="hero-page container grid grid--2-col">
+        <div className={`hero-page container grid grid--2-col ${paddingClass}`}>
           <div className="hero-content">
             <div className="slogans-hero">
               <h1>CREATIVE</h1> <br />

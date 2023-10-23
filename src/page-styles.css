@@ -86,13 +86,13 @@ Greys:
 ###SECTION HERO###
 #######################*/
 .section-hero {
-  /* margin-bottom: 6.4rem; */
-  width: 100%;
   height: 100vh;
+  position: relative;
 }
-/* .hero-page {
-  height: 100vh;
-} */
+
+.padding-top {
+  padding-top: 6rem;
+}
 .background-clip {
   width: 100%;
   height: 100%;
@@ -178,15 +178,18 @@ Greys:
 /*#####################
 ###ABOUT ME SECTION###
 #######################*/
-/* .about-me-section {
-  padding-bottom: 6.4rem;
-} */
+.about-me-section {
+  /* margin-top: 6.4rem; */
+  /* margin-bottom: 6.4rem; */
+  height: calc(100vh+ 6rem);
+}
 .about-page {
   grid-template-columns: 1fr 2fr;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: rgba(116, 12, 220, 0.137);
   border-radius: 10px;
   border: #740cdc solid 1px;
+  margin-bottom: 2rem;
 }
 .about-img img {
   height: 400px;
@@ -213,7 +216,7 @@ Greys:
   border-bottom: solid 1px #740cdc;
 }
 .about-title {
-  margin-bottom: 6.4rem;
+  margin-bottom: 2rem;
 }
 .about-disc p {
   font-family: inherit;
@@ -235,15 +238,21 @@ Greys:
 /*##############
 ###RP-SECTION###
 ################*/
-.rp-section {
+/* .rp-section {
   margin-top: 6.4rem;
   margin-bottom: 6.4rem;
+} */
+.rp-section {
+  height: calc(100vh);
+  padding-top: 6rem;
+  /* margin-bottom: 6.4rem; */
 }
+
 .title-con {
   font-size: 3rem;
   color: #fff;
   font-family: inherit;
-  margin-bottom: 6.4rem;
+  /* margin-bottom: 6.4rem; */
   border-bottom: #740cdc solid 1px;
 }
 .button-con {
@@ -256,8 +265,13 @@ Greys:
   padding: 1.2rem;
   font-size: 1.6rem;
   border-radius: 15px;
+  margin-top: 1.6rem;
 }
-
+.rp-card-container {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 /*##############
 ###cta-SECTION###
 ################*/
@@ -351,8 +365,21 @@ form > * {
   display: flex;
   justify-content: flex-end;
 }
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 4rem;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.contact-box ion-icon {
+  align-self: center;
+}
 /*##############
-###RP-SECTION###
+###FOOTER###
 ################*/
 .footer-section {
   margin-top: 12.8rem;

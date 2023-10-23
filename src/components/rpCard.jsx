@@ -20,13 +20,12 @@ function RpCard(props) {
           <Tag tagName="MongoDB" />
           <Tag tagName="Heroku" />
         </div>
-        <div className="rp-disc">
+        {/* <div className="rp-disc">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vero
-            natus ut dolorem, recusandae rerum quae illo eius animi earum
-            voluptatum, sit fugiat? Dolo
+            natus ut dolorem, recusandae rerum quae illo
           </p>
-        </div>
+        </div> */}
         <div className="rp-btn--con">
           <ButtonFull class="rp-btn--style btn--hover " text="Visit website" />
           <ButtonFull class="rp-btn--style btn--hover" text="See the code" />
