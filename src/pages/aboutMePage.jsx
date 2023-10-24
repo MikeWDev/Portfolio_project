@@ -3,13 +3,13 @@ import DataLine from "../components/dataLine";
 import SkillCard from "../components/skillCard";
 import { FrontEndData, BackEndData, DesignData } from "../components/icons";
 import profile2 from "../assets/img/profile2.png";
-function AboutMePage() {
+function AboutMePage(props) {
   const aboutMeDics =
     "Hello there! 👋 I'm a passionate and results-driven full-stack developer with a keen interest in crafting robust, user-centric solutions. I thrive on turning complex problems into elegant, intuitive, and efficient solutions.";
 
   return (
     <>
-      <section className="about-me-section container">
+      <section className="about-me-section container" id={props.id}>
         <div className="about-title">
           <h3>Who am i?</h3>
         </div>

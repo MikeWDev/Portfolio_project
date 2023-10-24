@@ -4,7 +4,8 @@ import NavBar from "../components/navBar";
 import videoBg from "../assets/img/bg-vid.mp4";
 import ButtonFull from "../components/buttonFull";
 import Profile1 from "../assets/img/profile1.png";
-function HeroPage() {
+import { Link } from "react-scroll";
+function HeroPage(props) {
   const [paddingClass, setPaddingClass] = useState("");
 
   useEffect(() => {
@@ -24,7 +25,7 @@ function HeroPage() {
 
   return (
     <>
-      <section className="section-hero">
+      <section className="section-hero" id={props.id}>
         <video
           className={`background-clip `}
           src={videoBg}
@@ -43,10 +44,12 @@ function HeroPage() {
               <br />
               <p className="paragraph-hero">{introduction}</p>
               <div className="hero-btn-box">
-                <ButtonFull
-                  class=" btn--hover btn--hero"
-                  text="Check out my work"
-                />
+                <Link to="rp" duration={1000} smooth={true}>
+                  <ButtonFull
+                    class=" btn--hover btn--hero"
+                    text="Check out my work"
+                  />
+                </Link>
               </div>
             </div>
           </div>

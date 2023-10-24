@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const [stickyClass, setStickyClass] = useState("");
@@ -17,6 +18,8 @@ function NavBar() {
     }
   };
 
+  //SCROLLING LOGIC
+
   return (
     <>
       <div className="nav-box">
@@ -24,21 +27,31 @@ function NavBar() {
           <nav>
             <ul className="nav-links">
               <li>
-                <a href="#">Home</a>
+                <Link to="hero" duration={1000} smooth={true}>
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#">About</a>
+                <Link to="about" duration={1000} offset={-50} smooth={true}>
+                  About
+                </Link>
               </li>
               <li>
-                <a href="#">Portfolio</a>
+                <Link to="rp" duration={1000} smooth={true}>
+                  Portfolio
+                </Link>
               </li>
             </ul>
           </nav>
           <div className="img-box">
-            <img src={logo} className="logo-img" alt="Logo of developer" />
+            <Link to="hero" duration={1000} smooth={true}>
+              <img src={logo} className="logo-img" alt="Logo of developer" />
+            </Link>
           </div>
           <div className="contact-me-box">
-            <a href="#">Contact me </a>
+            <Link to="ctaction" smooth={true} duration={1000}>
+              Contact me
+            </Link>
           </div>
         </header>
       </div>

@@ -134,6 +134,7 @@ header {
 }
 .nav-links > li > a:hover {
   color: #989595;
+  cursor: pointer;
 }
 
 .logo-img {
@@ -141,6 +142,7 @@ header {
 }
 .img-box {
   padding-right: 170px;
+  cursor: pointer;
 }
 .contact-me-box {
   font-size: 2.4rem;
@@ -154,6 +156,7 @@ header {
 }
 .contact-me-box:hover {
   background-color: rgba(116, 12, 220, 0.2);
+  cursor: pointer;
 }
 /* .contact-me-box a:hover {
   color: #989595;

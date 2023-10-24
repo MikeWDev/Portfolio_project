@@ -7,10 +7,10 @@ import {
   message,
 } from "../components/icons";
 import ContactForm from "../components/contactForm";
-function Cta() {
+function Cta(props) {
   return (
     <>
-      <section className="cta-section container">
+      <section className={"cta-section container "} id={props.id}>
         <div className="cta-title">
           <h2>Ready to enter digital word?</h2>
           <h3>Contact me</h3>

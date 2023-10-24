@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <WelcomePage />
-      <HeroPage />
+      <HeroPage id="hero" />
       <WhatIDoPage />
-      <AboutMePage />
-      <RecentProjects />
-      <Cta />
+      <AboutMePage id="about" />
+      <RecentProjects id="rp" />
+      <Cta id="ctaction" />
       <Footer />
     </>
   );

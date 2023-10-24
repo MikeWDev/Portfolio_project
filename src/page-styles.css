@@ -199,7 +199,7 @@ Greys:
 .about-img {
   border-right: #740cdc solid 1p;
 }
-.about-img--profile {
+.about--profile {
   margin-right: 1.6rem;
 }
 .about-content {
@@ -305,9 +305,11 @@ Greys:
 }
 .contact-box {
   display: flex;
+  cursor: pointer;
 }
 .contact-box p {
   align-self: center;
+  cursor: pointer;
 }
 
 .text-gap {
