@@ -37,11 +37,14 @@ function HeroPage(props) {
         {/* <NavBar /> */}
         <div className={`hero-page container grid grid--2-col ${paddingClass}`}>
           <div className="hero-content">
-            <div className="slogans-hero">
+            <div className="slogans-hero slogans-hero-lg">
               <h1>CREATIVE</h1> <br />
               <h1>UNIQUE</h1> <br />
               <h1>SIMPLE</h1>
               <br />
+            </div>
+
+            <div className="hero-paragraph">
               <p className="paragraph-hero">{introduction}</p>
               <div className="hero-btn-box">
                 <Link to="rp" duration={1000} smooth={true}>
@@ -53,12 +56,21 @@ function HeroPage(props) {
               </div>
             </div>
           </div>
-          <div className="pic-container">
-            <img
-              className="hero-img"
-              src={Profile1}
-              alt="The picture of the developer"
-            />
+
+          <div className="pic-container pic-container-hero">
+            <div className="slogans-hero slogans-hero-sm">
+              <h1>CREATIVE</h1> <br />
+              <h1>UNIQUE</h1> <br />
+              <h1>SIMPLE</h1>
+              <br />
+            </div>
+            <div className="hero-pic--con-sm">
+              <img
+                className="hero-img"
+                src={Profile1}
+                alt="The picture of the developer"
+              />
+            </div>
           </div>
         </div>
       </section>

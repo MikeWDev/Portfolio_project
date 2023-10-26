@@ -54,6 +54,37 @@
 ### Smaller tablets 700px###
 ####################*/
 @media (max-width: 43em) {
+  .paragraph-hero {
+    font-size: 3.2rem;
+  }
+  .hero-img {
+    height: auto;
+    width: 100%;
+  }
+  .btn--hero {
+    font-size: 3rem;
+  }
+  .slogans-hero-lg {
+    display: none;
+  }
+  .slogans-hero-sm {
+    display: inline-block;
+    font-size: 2rem;
+  }
+  .slogans-hero-sm h1 {
+    font-size: 7.4rem;
+  }
+  .pic-container {
+    grid-row: 1;
+  }
+  .hero-page {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero-content {
+    padding-top: 3.2rem;
+  }
+
   .skill-title h3 {
     font-size: 3rem;
   }
@@ -142,7 +173,16 @@
   .about-data p {
     font-size: 2.4rem;
   }
-} /* ### SPACING SYSTEM (px)
+}
+/*###################
+### Phones 570px###
+####################*/
+@media (max-width: 36em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+/* ### SPACING SYSTEM (px)
 
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 

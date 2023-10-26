@@ -100,7 +100,16 @@ Greys:
   position: absolute;
   z-index: -1;
 }
+.slogans-hero-sm {
+  display: none;
+}
 .hero-content h1 {
+  font-size: 6.2rem;
+  font-family: "Poppins", serif;
+  color: #fff;
+  line-height: 6.4rem;
+}
+.slogans-hero h1 {
   font-size: 6.2rem;
   font-family: "Poppins", serif;
   color: #fff;
@@ -233,9 +242,6 @@ Greys:
 }
 .about-skills {
   grid-template-columns: repeat(3, 1fr);
-}
-.about-adress--sm {
-  display: ;
 }
 
 /*##############
