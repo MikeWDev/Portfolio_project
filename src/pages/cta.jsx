@@ -17,24 +17,39 @@ function Cta(props) {
         </div>
         <div className="container grid grid--cta">
           <div className="contact-info grid">
-            <div className="phone-box contact-box">
-              {whatsApp}
-              <p>07496481135</p>
+            <div className="contact-details grid">
+              <div className="phone-box contact-box">
+                {whatsApp}
+                <p>07496481135</p>
+              </div>
+              <div className="email-box contact-box">
+                {eMail}
+                <p>mkocik.dev@gmail.com</p>
+              </div>
+              <div className="linkedin-box contact-box">
+                {linkedIn}
+                <p>fjdfsdjfsjdf</p>
+              </div>
+              <div className="twitter-box contact-box">
+                {twitter}
+                <p>dskfsdkfdsf</p>
+              </div>
             </div>
-            <div className="email-box contact-box">
-              {eMail}
-              <p>mkocik.dev@gmail.com</p>
-            </div>
-            <div className="linkedin-box contact-box">
-              {linkedIn}
-              <p>fjdfsdjfsjdf</p>
-            </div>
-            <div className="twitter-box contact-box">
-              {twitter}
-              <p>dskfsdkfdsf</p>
+            <div className="gap-con-sm text-gap">
+              <p>
+                OR
+                <br></br>
+                <div className="arrow">
+                  <ion-icon
+                    size="large"
+                    className="arrow-icon"
+                    name="arrow-down-outline"
+                  ></ion-icon>
+                </div>
+              </p>
             </div>
           </div>
-          <div className="text-gap">
+          <div className="text-gap gap-con-lg">
             <p>OR</p>
           </div>
           <div className="contact-form grid">

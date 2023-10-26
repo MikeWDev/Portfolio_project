@@ -34,7 +34,7 @@ function HeroPage(props) {
           loop
         />
 
-        <NavBar />
+        {/* <NavBar /> */}
         <div className={`hero-page container grid grid--2-col ${paddingClass}`}>
           <div className="hero-content">
             <div className="slogans-hero">

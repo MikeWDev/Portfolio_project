@@ -5,7 +5,7 @@ function RecentProjects(props) {
   return (
     <>
       <section className="rp-section " id={props.id}>
-        <div className="container grid ">
+        <div className="container grid grid-rp ">
           <div className="title-con">
             <h2>Most recent projects</h2>
           </div>

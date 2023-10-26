@@ -20,6 +20,12 @@ function AboutMePage(props) {
               className="about-img--profile"
               alt="Another picture of developer"
             />
+            <div className="about-adress grid about-adress--sm">
+              <DataLine name="Age" data="24" />
+              <DataLine name="Residence" data="UK" />
+              <DataLine name="Freelance" data="Available" />
+              <DataLine name="Address" data="Reading, UK" />
+            </div>
           </div>
 
           <div className="grid about-content">
@@ -28,7 +34,7 @@ function AboutMePage(props) {
                 <p>{aboutMeDics}</p>
               </div>
 
-              <div className="about-adress grid">
+              <div className="about-adress grid about-adress--lg">
                 <DataLine name="Age" data="24" />
                 <DataLine name="Residence" data="UK" />
                 <DataLine name="Freelance" data="Available" />

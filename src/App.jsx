@@ -6,6 +6,7 @@ import AboutMePage from "./pages/aboutMePage";
 import RecentProjects from "./pages/mostRecProjects";
 import Footer from "./pages/footer";
 import Cta from "./pages/cta";
+
 function App() {
   return (
     <>

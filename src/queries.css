@@ -1,0 +1,151 @@
+/*###################
+### Small laptops below 990px###
+####################*/
+@media (max-width: 62em) {
+  html {
+    font-size: 56.5%;
+  }
+
+  .text-gap {
+    font-size: 5.2rem;
+  }
+  .about-disc p {
+    padding-right: 0;
+  }
+
+  .about-img--profile {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .welcome-page {
+    align-items: normal;
+  }
+  .section-hero {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+  }
+}
+
+/*###################
+### Landscape tablets 880px###
+####################*/
+@media (max-width: 55em) {
+  html {
+    font-size: 50%;
+  }
+  .section-hero {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+  }
+}
+/*###################
+### Tablets 800px###
+####################*/
+@media (max-width: 50em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+/*###################
+### Smaller tablets 700px###
+####################*/
+@media (max-width: 43em) {
+  .skill-title h3 {
+    font-size: 3rem;
+  }
+  .skill-points li {
+    font-size: 2.4rem;
+  }
+  .wid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .card-container {
+    display: grid;
+    max-width: 40.8rem;
+    justify-self: center;
+  }
+  .about-page {
+    grid-template-columns: 1fr;
+  }
+  .about-img--profile {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .about-img {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-adress--sm {
+    display: grid;
+  }
+  .about-adress--lg {
+    display: none;
+  }
+  .about-disc {
+    border: none;
+  }
+  .about-text {
+    grid-template-columns: 1fr;
+  }
+  .about-text p {
+    font-size: 2.4rem;
+  }
+  .about-me-section {
+    height: auto;
+  }
+  .grid--cta {
+    grid-template-columns: 1fr;
+  }
+  .contact-box {
+    align-items: center;
+  }
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gap-con-lg {
+    display: none;
+  }
+  .contact-details {
+    padding: 2.4rem;
+  }
+  .gap-con-sm {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .gap-con-sm p {
+    font-size: 8.6rem;
+  }
+  .gap-con-sm ion-icon {
+    margin-right: 0;
+    align-items: self;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow ion-icon {
+    transform: rotate(45deg);
+    display: block;
+  }
+  .cta-section {
+    height: auto;
+  }
+  .data-name p {
+    font-size: 2.4rem;
+  }
+  .about-data p {
+    font-size: 2.4rem;
+  }
+} /* ### SPACING SYSTEM (px)
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+### FONT SIZE SYSTEM (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
