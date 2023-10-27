@@ -22,6 +22,7 @@ function NavBar() {
 
   return (
     <>
+      {/* navhidden */}
       <div className="nav-box">
         <header className={`navbar ${stickyClass}`}>
           <nav>

@@ -5,6 +5,8 @@ import videoBg from "../assets/img/bg-vid.mp4";
 import ButtonFull from "../components/buttonFull";
 import Profile1 from "../assets/img/profile1.png";
 import { Link } from "react-scroll";
+import NavBarSmFullScreen from "../components/navBarSmFullScreen";
+import NavBarSm from "../components/navBarSm";
 function HeroPage(props) {
   const [paddingClass, setPaddingClass] = useState("");
 
@@ -33,8 +35,9 @@ function HeroPage(props) {
           muted
           loop
         />
-
-        {/* <NavBar /> */}
+        <NavBarSmFullScreen />
+        <NavBarSm />
+        <NavBar />
         <div className={`hero-page container grid grid--2-col ${paddingClass}`}>
           <div className="hero-content">
             <div className="slogans-hero slogans-hero-lg">

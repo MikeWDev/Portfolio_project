@@ -8,6 +8,9 @@
   .welcome-page h1 {
     font-size: 4.4rem;
   }
+  .navbar-container {
+    display: none;
+  }
   .text-gap {
     font-size: 5.2rem;
   }
@@ -24,7 +27,7 @@
   }
   .section-hero {
     display: grid;
-    align-items: center;
+
     justify-content: center;
     margin-bottom: 2.4rem;
   }
@@ -39,15 +42,19 @@
   }
   .section-hero {
     display: grid;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 2.4rem;
+  }
+  .navbar-container {
+    display: none;
   }
 }
 /*###################
 ### Tablets 800px###
 ####################*/
 @media (max-width: 50em) {
+  .navbar-container {
+    display: none;
+  }
   html {
     font-size: 43.75%;
   }
@@ -56,6 +63,22 @@
 ### Smaller tablets 700px###
 ####################*/
 @media (max-width: 43em) {
+  .navbar-container {
+    display: inline;
+  }
+  .navbar-sm {
+    display: flex;
+    border-bottom: solid 1px rgba(116, 12, 220, 0.285);
+  }
+  .img-box-sm {
+    font-size: 1rem;
+  }
+  .nav-box {
+    display: none;
+  }
+  .nav-box-sm {
+    display: inline;
+  }
   .title-box h2 {
     font-size: 4.4rem;
   }
@@ -209,10 +232,10 @@
     }
     @media (max-width: 23em) {
       .skill-title h3 {
-        font-size: 2.4rem;
+        font-size: 2rem;
       }
       .skill-points li {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
       .data-name p {
         font-size: 1.8rem;
@@ -234,6 +257,18 @@
       }
       .btn--hero {
         font-size: 2.4rem;
+      }
+      .single-label label {
+        font-size: 2rem;
+      }
+      .contact-box p {
+        font-size: 2rem;
+      }
+      .grid--cta {
+        padding: 1rem;
+      }
+      .contact-details {
+        padding: 1.8rem;
       }
     }
   }
