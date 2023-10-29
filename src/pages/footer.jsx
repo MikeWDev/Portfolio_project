@@ -1,5 +1,5 @@
 import React from "react";
-import { twitter, linkedIn, instagram } from "../components/icons";
+import { github, linkedIn, instagram } from "../components/icons";
 import logo from "../assets/img/logo.png";
 function Footer() {
   return (
@@ -26,7 +26,7 @@ function Footer() {
           <div className="socials">
             <div className="social-icon">{linkedIn}</div>
             <div className="social-icon">{instagram}</div>
-            <div className="social-icon">{twitter}</div>
+            <div className="social-icon">{github}</div>
           </div>
         </footer>
       </section>

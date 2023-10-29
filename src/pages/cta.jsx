@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  whatsApp,
-  eMail,
-  linkedIn,
-  twitter,
-  message,
-} from "../components/icons";
+import { whatsApp, eMail, linkedIn, github } from "../components/icons";
 import ContactForm from "../components/contactForm";
 function Cta(props) {
   return (
@@ -20,7 +14,7 @@ function Cta(props) {
             <div className="contact-details grid">
               <div className="phone-box contact-box">
                 {whatsApp}
-                <p>07496481135</p>
+                <p>+44 7496481135</p>
               </div>
               <div className="email-box contact-box">
                 {eMail}
@@ -28,11 +22,11 @@ function Cta(props) {
               </div>
               <div className="linkedin-box contact-box">
                 {linkedIn}
-                <p>fjdfsdjfsjdf</p>
+                <p>Michal Kocik</p>
               </div>
               <div className="twitter-box contact-box">
-                {twitter}
-                <p>dskfsdkfdsf</p>
+                {github}
+                <p>MikeWDev</p>
               </div>
             </div>
             <div className="gap-con-sm text-gap">

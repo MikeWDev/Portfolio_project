@@ -28,7 +28,7 @@ export const eMail = <ion-icon name="mail-outline"></ion-icon>;
 
 export const linkedIn = <ion-icon name="logo-linkedin"></ion-icon>;
 
-export const twitter = <ion-icon name="logo-twitter"></ion-icon>;
+export const github = <ion-icon name="logo-github"></ion-icon>;
 
 export const instagram = <ion-icon name="logo-instagram"></ion-icon>;
 

@@ -23,7 +23,7 @@ function HeroPage(props) {
   };
 
   const introduction =
-    "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites of all kind";
+    "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites for everyone!";
 
   return (
     <>

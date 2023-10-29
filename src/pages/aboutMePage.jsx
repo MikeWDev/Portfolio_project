@@ -11,7 +11,7 @@ function AboutMePage(props) {
     <>
       <section className="about-me-section container" id={props.id}>
         <div className="about-title">
-          <h3>Who am i?</h3>
+          <h2>Who am i?</h2>
         </div>
         <div className="about-page container grid">
           <div className="grid about-img">

@@ -6,13 +6,13 @@ import { backEnd } from "../components/icons";
 function WhatIDoPage() {
   const designTitle = "Web design";
   const designContent =
-    "I will create wonderfull design of your website following all, web design rules so something";
+    "I will create wonderfull design of your website following all modern web design rules";
   const frontEndTitle = "Front-end Dev";
   const frontEndContent =
-    "Implement entire design to the code to create powerfull app";
+    "I will turn the created design into the code creating powerfull app!";
   const backEndTitle = "Back-end Dev";
   const backEndContent =
-    "Create fully working server side code so your website can run all day and all night without stopping";
+    "I will take care of server side logic making sure that your app is working perfectly";
 
   return (
     <>

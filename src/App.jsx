@@ -14,7 +14,7 @@ function App() {
       <HeroPage id="hero" />
       <WhatIDoPage />
       <AboutMePage id="about" />
-      <RecentProjects id="rp" />
+      {/* <RecentProjects id="rp" /> */}
       <Cta id="ctaction" />
       <Footer />
     </>
