@@ -71,7 +71,7 @@ function HeroPage(props) {
               <img
                 className="hero-img"
                 src={Profile1}
-                alt="The picture of the developer"
+                alt="Neon shape of the developer"
               />
             </div>
           </div>

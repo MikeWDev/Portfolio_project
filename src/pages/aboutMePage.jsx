@@ -18,9 +18,9 @@ function AboutMePage(props) {
             <img
               src={profile2}
               className="about-img--profile"
-              alt="Another picture of developer"
+              alt="The picture of the developer"
             />
-            <div className="about-adress grid about-adress--sm">
+            <div className="about-adress  about-adress--sm">
               <DataLine name="Age" data="24" />
               <DataLine name="Residence" data="UK" />
               <DataLine name="Freelance" data="Available" />

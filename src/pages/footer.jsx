@@ -21,7 +21,7 @@ function Footer() {
                 style={{ cursor: "pointer" }}
                 src={logo}
                 className="logo-img"
-                alt="Developer logo"
+                alt="Developer's logo"
               />
             </Link>
           </div>

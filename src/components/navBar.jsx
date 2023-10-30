@@ -2,9 +2,33 @@ import React from "react";
 import { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
+import HeroPage from "../pages/heroPage";
 
 function NavBar() {
   const [stickyClass, setStickyClass] = useState("");
+
+  // useEffect(() => {
+  //   const heroEl = document.querySelectorAll(".hero-section");
+
+  //   const obs = new IntersectionObserver(
+  //     function (entiers) {
+  //       const ent = entiers[0];
+  //       console.log(ent);
+  //       if (!ent.isIntersecting) {
+  //         setStickyClass("sticky");
+  //       }
+  //       if (ent.isIntersecting) {
+  //         setStickyClass("");
+  //       }
+  //     },
+  //     {
+  //       root: null,
+  //       threshold: 0,
+  //       rootMargin: "-90px",
+  //     }
+  //   );
+  //   obs.observe(heroEl);
+  // }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
@@ -46,7 +70,7 @@ function NavBar() {
           </nav>
           <div className="img-box">
             <Link to="hero" duration={1000} smooth={true}>
-              <img src={logo} className="logo-img" alt="Logo of developer" />
+              <img src={logo} className="logo-img" alt="Developer's logo" />
             </Link>
           </div>
           <div className="contact-me-box">
