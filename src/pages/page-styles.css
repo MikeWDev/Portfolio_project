@@ -420,6 +420,3 @@ form > * {
   gap: 1.6rem;
   flex-direction: column;
 }
-.social-icon {
-  cursor: pointer;
-}

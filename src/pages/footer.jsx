@@ -1,32 +1,68 @@
 import React from "react";
-import { github, linkedIn, instagram } from "../components/icons";
+import {
+  github,
+  linkedIn,
+  instagram,
+  linkedInLink,
+  instagramLink,
+  gitHubLink,
+} from "../components/icons";
 import logo from "../assets/img/logo.png";
+import { Link } from "react-scroll";
+
 function Footer() {
   return (
     <>
       <section className="footer-section">
         <footer className="container grid grid--3-col">
           <div className="logo">
-            <img src={logo} className="logo-img" alt="Developer logo" />
+            <Link to="hero" duration={1000} smooth={true}>
+              <img
+                style={{ cursor: "pointer" }}
+                src={logo}
+                className="logo-img"
+                alt="Developer logo"
+              />
+            </Link>
           </div>
           <div className="nav-links--footer">
-            <div className="navlink">
-              <a href="#">Home</a>
-            </div>
-            <div className="navlink">
-              <a href="#">About</a>
-            </div>
-            <div className="navlink">
-              <a href="#">Portfolio</a>
-            </div>
-            <div className="navlink">
-              <a href="#">Contact me</a>
-            </div>
+            <Link to="hero" duration={1000} smooth={true}>
+              <div className="navlink">
+                <a href="#">Home</a>
+              </div>
+            </Link>
+            <Link to="about" duration={1000} smooth={true}>
+              <div className="navlink">
+                <a href="#">About</a>
+              </div>
+            </Link>
+            <Link to="rp" duration={1000} smooth={true}>
+              <div className="navlink">
+                <a href="#">Portfolio</a>
+              </div>
+            </Link>
+            <Link to="ctaction" duration={1000} smooth={true}>
+              <div className="navlink">
+                <a href="#">Contact me</a>
+              </div>
+            </Link>
           </div>
           <div className="socials">
-            <div className="social-icon">{linkedIn}</div>
-            <div className="social-icon">{instagram}</div>
-            <div className="social-icon">{github}</div>
+            <a href={linkedInLink} target="_blank">
+              <div className="icon--footer" style={{ cursor: "pointer" }}>
+                {linkedIn}
+              </div>
+            </a>
+            <a href={instagramLink} target="_blank">
+              <div className="icon--footer" style={{ cursor: "pointer" }}>
+                {instagram}
+              </div>
+            </a>
+            <a href={gitHubLink} target="_blank">
+              <div className="icon--footer" style={{ cursor: "pointer" }}>
+                {github}
+              </div>
+            </a>
           </div>
         </footer>
       </section>

@@ -319,6 +319,10 @@ Greys:
 .contact-box {
   display: flex;
   cursor: pointer;
+  text-decoration: none;
+}
+.contact-box a {
+  text-decoration: none;
 }
 .contact-box p {
   align-self: center;
@@ -431,4 +435,8 @@ form > * {
 .socials {
   gap: 1.6rem;
   flex-direction: column;
+}
+.contact-details a {
+  text-decoration: none;
+  all: unset;
 }

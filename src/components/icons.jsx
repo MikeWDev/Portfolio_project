@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../page-styles.css";
 ///ICONS
 export const designSvg = (
   <svg
@@ -26,11 +26,17 @@ export const whatsApp = <ion-icon name="logo-whatsapp"></ion-icon>;
 
 export const eMail = <ion-icon name="mail-outline"></ion-icon>;
 
-export const linkedIn = <ion-icon name="logo-linkedin"></ion-icon>;
+export const linkedIn = (
+  <ion-icon name="logo-linkedin" className="social-icon--footer"></ion-icon>
+);
 
-export const github = <ion-icon name="logo-github"></ion-icon>;
+export const github = (
+  <ion-icon name="logo-github" className="social-icon--footer"></ion-icon>
+);
 
-export const instagram = <ion-icon name="logo-instagram"></ion-icon>;
+export const instagram = (
+  <ion-icon name="logo-instagram" className="social-icon--footer"></ion-icon>
+);
 
 export const message = (
   <svg
@@ -72,3 +78,10 @@ export const DesignData = {
   skill_3: "Figma",
   skill_4: "Responsive design",
 };
+
+export const linkedInLink =
+  "https://www.linkedin.com/in/michal-kocik-089bb4283/";
+
+export const instagramLink = "https://www.instagram.com/";
+
+export const gitHubLink = "https://github.com/MikeWDev";

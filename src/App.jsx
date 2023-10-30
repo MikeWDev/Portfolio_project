@@ -1,4 +1,3 @@
-import { useState } from "react";
 import WelcomePage from "./pages/welcomePage";
 import HeroPage from "./pages/heroPage";
 import WhatIDoPage from "./pages/whatIDo";
@@ -6,6 +5,9 @@ import AboutMePage from "./pages/aboutMePage";
 import RecentProjects from "./pages/mostRecProjects";
 import Footer from "./pages/footer";
 import Cta from "./pages/cta";
+import "./component-style.css";
+import "./page-styles.css";
+import "./queries.css";
 
 function App() {
   return (
