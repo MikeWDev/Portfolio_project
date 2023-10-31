@@ -1,13 +1,12 @@
 import React from "react";
 import Tag from "./tag";
-import Gosia from "../assets/img/gosia-flowers.jpeg";
 import ButtonFull from "./buttonFull";
 function RpCard(props) {
   return (
     <>
       <div className="rp-card rp-card--grid">
         <div className="rp-img">
-          <img src={Gosia} alt="picture of the webstie" />
+          <img src="" alt="picture of the webstie" />
         </div>
         <div className="rp-title">
           <h3>COSTAM</h3>

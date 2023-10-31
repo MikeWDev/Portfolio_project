@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import React from "react";
 import NavBar from "../components/navBar";
 import videoBg from "../assets/img/bg-vid.mp4";
-import ButtonFull from "../components/buttonFull";
+import ButtonFull from "../components/ButtonFull";
 import Profile1 from "../assets/img/profile1.png";
 import { Link } from "react-scroll";
 import NavBarSmFullScreen from "../components/navBarSmFullScreen";
 import NavBarSm from "../components/navBarSm";
+import Profile1webp from "../assets/img/profile1.webp";
 function HeroPage(props) {
   const [paddingClass, setPaddingClass] = useState("");
 
@@ -68,11 +69,15 @@ function HeroPage(props) {
               <br />
             </div>
             <div className="hero-pic--con-sm">
-              <img
-                className="hero-img"
-                src={Profile1}
-                alt="Neon shape of the developer"
-              />
+              <picture>
+                <source srcSet={Profile1} type="image/png" />
+                <source srcSet={Profile1webp} type="image/webp" />
+                <img
+                  className="hero-img"
+                  src={Profile1webp}
+                  alt="Neon shape of the developer"
+                />
+              </picture>
             </div>
           </div>
         </div>

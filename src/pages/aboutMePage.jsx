@@ -3,6 +3,7 @@ import DataLine from "../components/dataLine";
 import SkillCard from "../components/skillCard";
 import { FrontEndData, BackEndData, DesignData } from "../components/icons";
 import profile2 from "../assets/img/profile2.png";
+import profile2webp from "../assets/img/profile2.webp";
 function AboutMePage(props) {
   const aboutMeDics =
     "Hello there! 👋 I'm a passionate and results-driven full-stack developer with a keen interest in crafting robust, user-centric solutions. I thrive on turning complex problems into elegant, intuitive, and efficient solutions.";
@@ -15,11 +16,16 @@ function AboutMePage(props) {
         </div>
         <div className="about-page container grid">
           <div className="grid about-img">
-            <img
-              src={profile2}
-              className="about-img--profile"
-              alt="The picture of the developer"
-            />
+            <picture>
+              <source srcSet={profile2webp} type="image/webp" />
+              <source srcSet={profile2} type="image/png" />
+              <img
+                src={profile2}
+                className="about-img--profile"
+                alt="The picture of the developer"
+              />
+            </picture>
+
             <div className="about-adress  about-adress--sm">
               <DataLine name="Age" data="24" />
               <DataLine name="Residence" data="UK" />
