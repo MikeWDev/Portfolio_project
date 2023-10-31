@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import NavBar from "../components/navBar";
 import videoBg from "../assets/img/bg-vid.mp4";
-import ButtonFull from "../components/ButtonFull";
+import ButtonFull from "../components/buttonFull";
 import Profile1 from "../assets/img/profile1.png";
 import { Link } from "react-scroll";
 import NavBarSmFullScreen from "../components/navBarSmFullScreen";

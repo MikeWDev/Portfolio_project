@@ -3,7 +3,9 @@ import React from "react";
 function ButtonFull(props) {
   return (
     <>
-      <button className={props.class}>{props.text}</button>
+      <button type={props.type} value={props.value} className={props.class}>
+        {props.text}
+      </button>
     </>
   );
 }

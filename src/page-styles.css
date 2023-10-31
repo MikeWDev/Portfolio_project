@@ -368,11 +368,16 @@ form > * {
 .contact label {
   font-size: 1.6rem;
 }
-.box input {
+.box input,
+textarea {
   padding: 1.6rem;
   background-color: rgba(116, 12, 220, 0.2);
   border-radius: 10px;
   border: #740cdc solid 1px;
+  color: #fff;
+}
+textarea {
+  font-family: inherit;
 }
 .box {
   display: flex;

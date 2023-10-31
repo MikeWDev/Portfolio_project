@@ -7,7 +7,7 @@ import {
   gitHubLink,
   linkedInLink,
 } from "../components/icons";
-import ContactForm from "../components/contactForm";
+import ContactForm from "../components/ContactForm";
 function Cta(props) {
   return (
     <>
