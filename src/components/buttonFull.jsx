@@ -3,7 +3,12 @@ import React from "react";
 function ButtonFull(props) {
   return (
     <>
-      <button type={props.type} value={props.value} className={props.class}>
+      <button
+        form={props.form}
+        type={props.type}
+        value={props.value}
+        className={props.class}
+      >
         {props.text}
       </button>
     </>
