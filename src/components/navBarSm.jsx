@@ -1,29 +1,15 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
+import useSticky from "../hooks/useSticky";
 
 function NavBarSm() {
-  const [stickyClass, setStickyClass] = useState("");
-
-  useEffect(() => {
-    window.addEventListener("scroll", stickNavbar);
-    return () => window.removeEventListener("scroll", stickNavbar);
-  }, []);
-
-  const stickNavbar = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      windowHeight > 600 ? setStickyClass("sticky-nav") : setStickyClass("");
-    }
-  };
-
-  //SCROLLING LOGIC
+  const stickyClass = useSticky("");
 
   return (
     <>
       {/* navhidden */}
-      <div className="navbar-container">
+      <div className={`navbar-container ${stickyClass}`}>
         <div className={`navbar-sm ${stickyClass}`}>
           <div className="img-box-sm">
             <Link to="hero" duration={1000} smooth={true}>

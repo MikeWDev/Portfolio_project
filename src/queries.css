@@ -63,6 +63,12 @@
 ### Smaller tablets 700px###
 ####################*/
 @media (max-width: 43em) {
+  .sticky {
+    position: fixed;
+    color: #740cdc;
+    background-color: rgba(116, 12, 220, 0.4);
+    display: flex;
+  }
   .navbar-container {
     display: inline;
   }

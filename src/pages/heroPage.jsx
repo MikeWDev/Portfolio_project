@@ -8,23 +8,11 @@ import { Link } from "react-scroll";
 import NavBarSmFullScreen from "../components/navBarSmFullScreen";
 import NavBarSm from "../components/navBarSm";
 import Profile1webp from "../assets/img/profile1.webp";
+import useSticky from "../hooks/useSticky";
 function HeroPage(props) {
-  const [paddingClass, setPaddingClass] = useState("");
-
-  useEffect(() => {
-    window.addEventListener("scroll", addPaddingClass);
-    return () => window.removeEventListener("scroll", addPaddingClass);
-  }, []);
-
-  const addPaddingClass = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      windowHeight > 600 ? setPaddingClass("padding-top") : setPaddingClass("");
-    }
-  };
-
   const introduction =
     "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites for everyone!";
+  const paddingClass = useSticky("");
 
   return (
     <>
@@ -39,7 +27,9 @@ function HeroPage(props) {
         <NavBarSmFullScreen />
         <NavBarSm />
         <NavBar />
-        <div className={`hero-page container grid grid--2-col ${paddingClass}`}>
+        <div
+          className={`hero-page container grid grid--2-col ${paddingClass} `}
+        >
           <div className="hero-content">
             <div className="slogans-hero slogans-hero-lg">
               <h1>CREATIVE</h1> <br />

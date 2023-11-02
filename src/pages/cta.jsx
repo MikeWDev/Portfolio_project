@@ -13,8 +13,7 @@ function Cta(props) {
     <>
       <section className={"cta-section container "} id={props.id}>
         <div className="cta-title">
-          <h2>Ready to enter digital word?</h2>
-          <h3>Contact me</h3>
+          <h2>Get in touch</h2>
         </div>
         <div className="container grid grid--cta">
           <div className="contact-info grid">

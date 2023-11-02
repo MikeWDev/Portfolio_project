@@ -1,54 +1,16 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
-import HeroPage from "../pages/heroPage";
+import useSticky from "../hooks/useSticky";
 
 function NavBar() {
-  const [stickyClass, setStickyClass] = useState("");
-
-  // useEffect(() => {
-  //   const heroEl = document.querySelectorAll(".hero-section");
-
-  //   const obs = new IntersectionObserver(
-  //     function (entiers) {
-  //       const ent = entiers[0];
-  //       console.log(ent);
-  //       if (!ent.isIntersecting) {
-  //         setStickyClass("sticky");
-  //       }
-  //       if (ent.isIntersecting) {
-  //         setStickyClass("");
-  //       }
-  //     },
-  //     {
-  //       root: null,
-  //       threshold: 0,
-  //       rootMargin: "-90px",
-  //     }
-  //   );
-  //   obs.observe(heroEl);
-  // }, []);
-
-  useEffect(() => {
-    window.addEventListener("scroll", stickNavbar);
-    return () => window.removeEventListener("scroll", stickNavbar);
-  }, []);
-
-  const stickNavbar = () => {
-    if (window !== undefined) {
-      let windowHeight = window.scrollY;
-      windowHeight > 600 ? setStickyClass("sticky-nav") : setStickyClass("");
-    }
-  };
-
-  //SCROLLING LOGIC
+  const stickyClass = useSticky("");
 
   return (
     <>
       {/* navhidden */}
       <div className="nav-box">
-        <header className={`navbar ${stickyClass}`}>
+        <header className={`navbar ${stickyClass} `}>
           <nav>
             <ul className="nav-links">
               <li>
