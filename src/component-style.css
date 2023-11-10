@@ -120,7 +120,7 @@ header {
   background-color: rgba(116, 12, 220, 0.4);
 }
 .nav-box {
-  justify-self: stretch;
+ display: flex;
 }
 .nav-links li {
   display: inline-block;
@@ -352,13 +352,16 @@ ion-icon {
 ###Small devices navbar full-screen###
 ################*/
 
+.navbar-container{
+  display: none;
+}
 .nav-bar--fs {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .nav-box-fs {
-  height: 100vh;
+  height: 7rem;
   width: 100vw;
   background-color: rgba(116, 12, 220, 0.514);
   display: flex;

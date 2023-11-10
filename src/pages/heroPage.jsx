@@ -27,6 +27,8 @@ function HeroPage(props) {
         <NavBarSmFullScreen />
         <NavBarSm />
         <NavBar />
+        <div className="center-container">
+
         <div
           className={`hero-page container grid grid--2-col ${paddingClass} `}
         >
@@ -71,6 +73,8 @@ function HeroPage(props) {
             </div>
           </div>
         </div>
+        </div>
+
       </section>
     </>
   );
