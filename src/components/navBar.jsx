@@ -2,46 +2,41 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
 
-
 function NavBar() {
-  
-  const[IntersectinnState, setIntersectingState] = useState(true);
+  const [IntersectinnState, setIntersectingState] = useState(true);
   // const[stickyClass, setStickyClass]
 
-useEffect(() =>{
-const obs = new IntersectionObserver(
-  function (entires){
-    const ent = entires[0];
-    const bodyEl = document.body;
-    const headerEl = document.querySelector("body");
-    console.log(headerEl)
-    if(ent.isIntersecting===false){
-      headerEl.classList.add("sticky");
-      setIntersectingState(false)
-    ;
-    }else{
-      if(ent.isIntersecting===true){
-        headerEl.classList.remove("sticky");
-        setIntersectingState(true)
-       
-      }
-    }
-  },
-  {
-    root:null,
-    threshold:0,
-    rootMargin:"-90px"
-  }
-);
-const heroWelcomeElement = document.querySelectorAll(".obs-class");
+  // useEffect(() =>{
+  // const obs = new IntersectionObserver(
+  //   function (entires){
+  //     const ent = entires[0];
+  //     const headerEl = document.querySelector("body");
+  //     console.log(headerEl)
+  //     if(ent.isIntersecting===false){
+  //       headerEl.classList.add("sticky");
+  //       setIntersectingState(false)
+  //     ;
+  //     }else{
+  //       if(ent.isIntersecting===true){
+  //         headerEl.classList.remove("sticky");
+  //         setIntersectingState(true)
 
+  //       }
+  //     }
+  //   },
+  //   {
+  //     root:null,
+  //     threshold:0,
+  //     rootMargin:"-90px"
+  //   }
+  // );
+  // const heroWelcomeElement = document.querySelectorAll(".obs-class");
 
-heroWelcomeElement.forEach((el) =>{
-  obs.observe(el)
- 
-})
-}, [IntersectinnState])
+  // heroWelcomeElement.forEach((el) =>{
+  //   obs.observe(el)
 
+  // })
+  // }, [IntersectinnState])
 
   return (
     <>

@@ -5,6 +5,11 @@
   html {
     font-size: 56.5%;
   }
+  .sticky .navbar-container {
+    position: fixed;
+    color: #740cdc;
+    background-color: rgba(116, 12, 220, 0.4);
+  }
   .welcome-page h1 {
     font-size: 4.4rem;
   }

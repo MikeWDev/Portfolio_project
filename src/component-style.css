@@ -119,9 +119,12 @@ header {
   color: #740cdc;
   background-color: rgba(116, 12, 220, 0.4);
 }
-.nav-box {
- 
+.sticky .navbar-container {
+  position: fixed;
+  color: #740cdc;
+  background-color: rgba(116, 12, 220, 0.4);
 }
+
 .nav-links li {
   display: inline-block;
   font-size: 2.4rem;
@@ -352,7 +355,7 @@ ion-icon {
 ###Small devices navbar full-screen###
 ################*/
 
-.navbar-container{
+.navbar-container {
   display: none;
 }
 .nav-bar--fs {
