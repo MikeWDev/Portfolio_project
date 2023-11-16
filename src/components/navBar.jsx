@@ -1,16 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
-import useSticky from "../hooks/useSticky";
+
 
 function NavBar() {
-  const stickyClass = useSticky("");
+  
+  const[IntersectinnState, setIntersectingState] = useState(true);
+  // const[stickyClass, setStickyClass]
+
+useEffect(() =>{
+const obs = new IntersectionObserver(
+  function (entires){
+    const ent = entires[0];
+    const bodyEl = document.body;
+    const headerEl = document.querySelector("body");
+    console.log(headerEl)
+    if(ent.isIntersecting===false){
+      headerEl.classList.add("sticky");
+      setIntersectingState(false)
+    ;
+    }else{
+      if(ent.isIntersecting===true){
+        headerEl.classList.remove("sticky");
+        setIntersectingState(true)
+       
+      }
+    }
+  },
+  {
+    root:null,
+    threshold:0,
+    rootMargin:"-90px"
+  }
+);
+const heroWelcomeElement = document.querySelectorAll(".obs-class");
+
+
+heroWelcomeElement.forEach((el) =>{
+  obs.observe(el)
+ 
+})
+}, [IntersectinnState])
+
 
   return (
     <>
       {/* navhidden */}
       <div className="nav-box">
-        <header className={`navbar ${stickyClass} `}>
+        <header className={`navbar header `}>
           <nav>
             <ul className="nav-links">
               <li>
@@ -36,7 +73,7 @@ function NavBar() {
             </Link>
           </div>
           <div className="contact-me-box">
-            <Link to="ctaction" smooth={true} duration={1000}>
+            <Link to="ctaction" smooth={true} duration={1000} offset={-50}>
               Contact me
             </Link>
           </div>

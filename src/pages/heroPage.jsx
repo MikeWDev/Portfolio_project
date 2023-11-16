@@ -8,15 +8,15 @@ import { Link } from "react-scroll";
 import NavBarSmFullScreen from "../components/navBarSmFullScreen";
 import NavBarSm from "../components/navBarSm";
 import Profile1webp from "../assets/img/profile1.webp";
-import useSticky from "../hooks/useSticky";
+
 function HeroPage(props) {
   const introduction =
     "My name is Michal. I am a full-stack developer based in Reading UK. I design and code beautiful and accessible websites for everyone!";
-  const paddingClass = useSticky("");
+  
 
   return (
     <>
-      <section className="section-hero" id={props.id}>
+      <section className="section-hero helper-class" id={props.id}>
         <video
           className={`background-clip `}
           src={videoBg}
@@ -30,7 +30,7 @@ function HeroPage(props) {
         <div className="center-container">
 
         <div
-          className={`hero-page container grid grid--2-col ${paddingClass} `}
+          className={`hero-page container grid grid--2-col  `}
         >
           <div className="hero-content">
             <div className="slogans-hero slogans-hero-lg">

@@ -1,16 +1,16 @@
 import React from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
-import useSticky from "../hooks/useSticky";
+
 
 function NavBarSm() {
-  const stickyClass = useSticky("");
+ 
 
   return (
     <>
       {/* navhidden */}
-      <div className={`navbar-container ${stickyClass}`}>
-        <div className={`navbar-sm ${stickyClass}`}>
+      <div className={`navbar-container `}>
+        <div className={`navbar-sm `}>
           <div className="img-box-sm">
             <Link to="hero" duration={1000} smooth={true}>
               <img src={logo} className="logo-img" alt="Logo of developer" />

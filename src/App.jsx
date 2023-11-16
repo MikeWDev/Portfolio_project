@@ -8,12 +8,12 @@ import Cta from "./pages/cta";
 import "./component-style.css";
 import "./page-styles.css";
 import "./queries.css";
+import HeroWelcomePage from "./pages/welcomeHeroPage";
 
 function App() {
   return (
     <>
-      <WelcomePage />
-      <HeroPage id="hero" />
+      <HeroWelcomePage/>
       <WhatIDoPage />
       <AboutMePage id="about" />
       <RecentProjects id="rp" />

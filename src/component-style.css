@@ -114,13 +114,13 @@ header {
   position: relative;
   top: 0;
 }
-.sticky {
+.sticky header {
   position: fixed;
   color: #740cdc;
   background-color: rgba(116, 12, 220, 0.4);
 }
 .nav-box {
- display: flex;
+ 
 }
 .nav-links li {
   display: inline-block;

@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 function WelcomePage() {
   return (
     <>
-      <section className="section-welcome">
+      <section className="section-welcome helper-class">
         {/* <video autoPlay muted loop playsInline>
           <source
             src="src\assets\img\background-vid.mp4"

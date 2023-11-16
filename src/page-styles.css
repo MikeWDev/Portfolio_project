@@ -85,9 +85,8 @@ Greys:
 .section-hero {
   height: 100vh;
   position: relative;
- 
 }
-.center-container{
+.center-container {
   display: grid;
   align-items: center;
   height: 90vh;
@@ -163,9 +162,6 @@ Greys:
   margin-top: 30px;
 }
 
-.sticky-padding {
-  padding-top: 11.8rem;
-}
 /*#####################
 ###WID SECTION###
 #######################*/
@@ -337,6 +333,16 @@ Greys:
   align-self: center;
   cursor: pointer;
 }
+.contact-box a {
+  align-self: center;
+  cursor: pointer;
+}
+
+.contact-details a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .text-gap {
   display: flex;
@@ -416,9 +422,7 @@ textarea {
 /*##############
 ###FOOTER###
 ################*/
-.footer-section {
-  margin-top: 12.8rem;
-}
+
 .footer-section {
   background-color: rgba(116, 12, 220, 0.2);
   padding: 2.4rem;
