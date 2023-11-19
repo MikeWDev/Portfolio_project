@@ -111,7 +111,7 @@ header {
   width: 100%;
   top: 0;
   height: 7rem;
-  /* transition: all ease 1s; */
+  transition: all ease-out 1s;
   position: relative;
   top: 0;
 }
@@ -119,6 +119,9 @@ header {
   position: fixed;
   color: #740cdc;
   background-color: rgba(116, 12, 220, 0.517);
+  /* transition: all ease 1s; */
+}
+.navbar {
   transition: all ease 1s;
 }
 .sticky .navbar-container {

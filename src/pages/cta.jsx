@@ -26,14 +26,20 @@ function Cta(props) {
                 {eMail}
                 <p>mkocik.dev@gmail.com</p>
               </div>
-              a
-              <div className="linkedin-box contact-box">
-                {linkedIn}
-                <p>Michal Kocik</p>
+
+              <div className="contact-box">
+                <div className="social-box">
+                  <a href={linkedInLink}>
+                    <p className="social-paragraph">{linkedIn} Michal Kocik</p>
+                  </a>
+                </div>
               </div>
               <div className="contact-box">
-                {github}
-                <p>MikeWDev</p>
+                <div className="social-box">
+                  <a href={gitHubLink}>
+                    <p className="social-paragraph"> {github} MikeWDev</p>
+                  </a>
+                </div>
               </div>
             </div>
             <div className="gap-con-sm text-gap">

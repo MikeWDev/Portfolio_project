@@ -457,3 +457,9 @@ textarea {
   text-decoration: none;
   all: unset;
 }
+.social-paragraph,
+.social-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
