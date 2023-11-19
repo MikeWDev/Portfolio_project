@@ -68,7 +68,14 @@
 ### Smaller tablets 700px###
 ####################*/
 @media (max-width: 43em) {
-  .sticky {
+  .contact-details {
+    font-size: 2.4rem;
+    font-family: inherit;
+  }
+  .cta-section {
+    margin-bottom: 12.8rem;
+  }
+  .sticky header {
     position: fixed;
     color: #740cdc;
     background-color: rgba(116, 12, 220, 0.4);
@@ -80,9 +87,14 @@
   .navbar-sm {
     display: flex;
     border-bottom: solid 1px rgba(116, 12, 220, 0.285);
+    height: 9rem;
   }
   .img-box-sm {
     font-size: 1rem;
+    padding-top: 2rem;
+  }
+  .img-box-sm a {
+    margin-top: 1rem;
   }
   .nav-box {
     display: none;
@@ -179,9 +191,7 @@
   .contact-box {
     align-items: center;
   }
-  .labels {
-    margin-top: 2rem;
-  }
+
   .contact-info {
     grid-template-columns: 1fr 1fr;
   }
@@ -189,7 +199,10 @@
     display: none;
   }
   .contact-details {
-    padding: 2.4rem;
+    padding-top: 2.4rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    row-gap: 3rem;
   }
   .gap-con-sm {
     display: grid;
@@ -232,58 +245,72 @@
   html {
     font-size: 37.5%;
   }
+  .welcome-page h1 {
+    font-size: 5rem;
+  }
 }
 @media (max-width: 30em) {
+  .welcome-page h1 {
+    font-size: 5.2rem;
+  }
+  .btn {
+    font-size: 3.7rem;
+  }
+  .btn--hero {
+    padding: 2.5rem;
+    font-size: 3.7rem;
+  }
   html {
     font-size: 30%;
   }
-  @media (max-width: 25em) {
-    html {
-      font-size: 31.5%;
+}
+@media (max-width: 25em) {
+  html {
+    font-size: 31.5%;
+  }
+  @media (max-width: 23em) {
+    .skill-title h3 {
+      font-size: 2rem;
     }
-    @media (max-width: 23em) {
-      .skill-title h3 {
-        font-size: 2rem;
-      }
-      .skill-points li {
-        font-size: 1.8rem;
-      }
-      .data-name p {
-        font-size: 1.8rem;
-      }
-      .about-data p {
-        font-size: 1.8rem;
-      }
-      .welcome-page h1 {
-        font-size: 4.4rem;
-      }
-      .slogans-hero h1 {
-        font-size: 5.2rem;
-      }
-      .slogans-hero {
-        font-size: 1rem;
-      }
-      .paragraph-hero {
-        font-size: 3rem;
-      }
-      .btn--hero {
-        font-size: 2.4rem;
-      }
-      .single-label label {
-        font-size: 2rem;
-      }
-      .contact-box p {
-        font-size: 2rem;
-      }
-      .grid--cta {
-        padding: 1rem;
-      }
-      .contact-details {
-        padding: 1.8rem;
-      }
+    .skill-points li {
+      font-size: 1.8rem;
+    }
+    .data-name p {
+      font-size: 1.8rem;
+    }
+    .about-data p {
+      font-size: 1.8rem;
+    }
+    .welcome-page h1 {
+      font-size: 4.4rem;
+    }
+    .slogans-hero h1 {
+      font-size: 5.2rem;
+    }
+    .slogans-hero {
+      font-size: 1rem;
+    }
+    .paragraph-hero {
+      font-size: 3rem;
+    }
+    .btn--hero {
+      font-size: 2.4rem;
+    }
+    .single-label label {
+      font-size: 2rem;
+    }
+    .contact-box p {
+      font-size: 2rem;
+    }
+    .grid--cta {
+      padding: 1rem;
+    }
+    .contact-details {
+      padding: 1.8rem;
     }
   }
-} /* ### SPACING SYSTEM (px)
+}
+/* ### SPACING SYSTEM (px)
 
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 

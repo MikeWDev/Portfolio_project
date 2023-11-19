@@ -415,6 +415,14 @@ textarea {
   flex-direction: column;
   gap: 4rem;
 }
+.single-label {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.single-label > label {
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
 .contact-box ion-icon {
   align-self: center;
 }
