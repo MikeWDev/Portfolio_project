@@ -48,11 +48,7 @@ Greys:
     Font color:
     Button collor:
 
-    
-    
-    
-    #################
-    /*#####################
+/*#####################
 ###SECTION WELCOME###
 #######################*/
 
@@ -66,7 +62,7 @@ Greys:
   font-size: 5.2rem;
   font-family: "Poppins", serif;
   color: #fff;
-  line-height: 8 rem;
+  line-height: 8rem;
   margin-top: auto;
 }
 .section-welcome {
@@ -77,6 +73,9 @@ Greys:
   background-color: #740cdc;
   color: #fff;
   margin-bottom: 12rem;
+}
+.welcome-page a {
+  height: 100%;
 }
 
 /*#####################

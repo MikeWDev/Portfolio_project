@@ -86,6 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: auto;
+  margin-top: 3.2rem;
 }
 .btn {
   padding: 1rem 3.6rem;
@@ -110,14 +111,15 @@ header {
   width: 100%;
   top: 0;
   height: 7rem;
-  transition: all ease 1s;
+  /* transition: all ease 1s; */
   position: relative;
   top: 0;
 }
 .sticky header {
   position: fixed;
   color: #740cdc;
-  background-color: rgba(116, 12, 220, 0.4);
+  background-color: rgba(116, 12, 220, 0.517);
+  transition: all ease 1s;
 }
 .sticky .navbar-container {
   position: fixed;
