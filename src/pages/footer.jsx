@@ -31,17 +31,17 @@ function Footer() {
                 <a href="#">Home</a>
               </div>
             </Link>
-            <Link to="about" duration={1000} smooth={true}>
+            <Link to="about" duration={1000} offset={-80} smooth={true}>
               <div className="navlink">
                 <a href="#">About</a>
               </div>
             </Link>
-            <Link to="rp" duration={1000} smooth={true}>
+            <Link to="rp" duration={1000} offset={-25} smooth={true}>
               <div className="navlink">
                 <a href="#">Portfolio</a>
               </div>
             </Link>
-            <Link to="ctaction" duration={1000} smooth={true}>
+            <Link to="ctaction" duration={1000} offset={-70} smooth={true}>
               <div className="navlink">
                 <a href="#">Contact me</a>
               </div>

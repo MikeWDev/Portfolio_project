@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
-import NavBarSmFullScreen from "./navBarSmFullScreen";
 
 function NavBar() {
   const [IntersectinnState, setIntersectingState] = useState(true);
@@ -11,7 +10,7 @@ function NavBar() {
       function (entires) {
         const ent = entires[0];
         const headerEl = document.querySelector("body");
-        console.log(headerEl);
+
         if (ent.isIntersecting === false) {
           headerEl.classList.add("sticky");
           setIntersectingState(false);
@@ -47,12 +46,12 @@ function NavBar() {
                 </Link>
               </li>
               <li>
-                <Link to="about" duration={1000} offset={-50} smooth={true}>
+                <Link to="about" duration={1000} offset={-80} smooth={true}>
                   About
                 </Link>
               </li>
               <li>
-                <Link to="rp" duration={1000} smooth={true}>
+                <Link to="rp" duration={1000} offset={-25} smooth={true}>
                   Portfolio
                 </Link>
               </li>
@@ -64,7 +63,7 @@ function NavBar() {
             </Link>
           </div>
           <div className="contact-me-box">
-            <Link to="ctaction" smooth={true} duration={1000} offset={-50}>
+            <Link to="ctaction" smooth={true} duration={1000} offset={-70}>
               Contact me
             </Link>
           </div>

@@ -103,7 +103,7 @@
     margin-bottom: 12.8rem;
   }
   .nav-box-fs {
-    display: flex;
+    display: none;
     z-index: 999;
   }
   .sticky header {
