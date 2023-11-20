@@ -10,6 +10,9 @@
     color: #740cdc;
     background-color: rgba(116, 12, 220, 0.4);
   }
+  .cta-section > .container {
+    padding-right: 0.6rem;
+  }
   .welcome-page h1 {
     font-size: 4.4rem;
   }
@@ -36,12 +39,22 @@
     justify-content: center;
     margin-bottom: 2.4rem;
   }
+  .single-label > label {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+  }
 }
 
 /*###################
 ### Landscape tablets 880px###
 ####################*/
 @media (max-width: 55em) {
+  .cta-section > .container {
+    padding-right: 0.6rem;
+  }
+  .grid--cta {
+    grid-template-columns: 1fr 0.5fr 3fr;
+  }
   html {
     font-size: 50%;
   }
@@ -52,16 +65,27 @@
   .navbar-container {
     display: none;
   }
+  .single-label > label {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+  }
 }
 /*###################
 ### Tablets 800px###
 ####################*/
 @media (max-width: 50em) {
+  .cta-section > .container {
+    padding-right: 0.6rem;
+  }
   .navbar-container {
     display: none;
   }
   html {
     font-size: 43.75%;
+  }
+  .single-label > label {
+    margin-right: 2rem;
+    font-size: 1.8rem;
   }
 }
 /*###################
@@ -72,8 +96,15 @@
     font-size: 2.4rem;
     font-family: inherit;
   }
+  .grid--cta {
+    grid-template-columns: 1fr 0.5fr 3fr;
+  }
   .cta-section {
     margin-bottom: 12.8rem;
+  }
+  .nav-box-fs {
+    display: flex;
+    z-index: 999;
   }
   .sticky header {
     position: fixed;
@@ -201,7 +232,6 @@
   .contact-details {
     padding-top: 2.4rem;
     padding-right: 2.4rem;
-    padding-left: 2.4rem;
     row-gap: 3rem;
   }
   .gap-con-sm {
@@ -244,6 +274,10 @@
 @media (max-width: 36em) {
   html {
     font-size: 37.5%;
+  }
+
+  .cta-section > .container {
+    padding-right: 0.6rem;
   }
   .welcome-page h1 {
     font-size: 5rem;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
+import NavBarSmFullScreen from "./navBarSmFullScreen";
 
 function NavBar() {
   const [IntersectinnState, setIntersectingState] = useState(true);
@@ -36,7 +37,6 @@ function NavBar() {
 
   return (
     <>
-      {/* navhidden */}
       <div className="nav-box">
         <header className={`navbar header `}>
           <nav>

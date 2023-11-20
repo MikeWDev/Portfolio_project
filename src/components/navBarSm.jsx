@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../assets/img/logo.png";
 import { Link } from "react-scroll";
-
+import { useVisible } from "../hooks/useVisible";
 function NavBarSm() {
+  const { visible, handleClickOpen, handleClickClose } = useVisible("");
   return (
     <>
       {/* navhidden */}
@@ -12,7 +13,11 @@ function NavBarSm() {
             <img src={logo} className="logo-img" alt="Logo of developer" />
           </Link>
         </div>
-        <div className="menu-button-sm">
+        <div
+          onClick={handleClickOpen}
+          className="menu-button-sm"
+          id="menu-icon"
+        >
           <ion-icon name="menu-outline"></ion-icon>
         </div>
       </header>

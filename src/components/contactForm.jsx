@@ -34,7 +34,7 @@ function ContactForm() {
             <label htmlFor="input">E-mail: </label>
           </div>
           <div className="single-label">
-            <label htmlFor="">Phone no:</label>
+            <label htmlFor="">Phone:</label>
           </div>
           <div className="single-label">
             <label htmlFor="">Message:</label>
@@ -73,7 +73,7 @@ function ContactForm() {
               <textarea
                 id="message"
                 name="message"
-                cols="50"
+                cols="40"
                 rows="5"
                 placeholder="Your message"
               ></textarea>

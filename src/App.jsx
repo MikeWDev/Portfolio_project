@@ -1,5 +1,3 @@
-import WelcomePage from "./pages/welcomePage";
-import HeroPage from "./pages/heroPage";
 import WhatIDoPage from "./pages/whatIDo";
 import AboutMePage from "./pages/aboutMePage";
 import RecentProjects from "./pages/mostRecProjects";
@@ -13,7 +11,7 @@ import HeroWelcomePage from "./pages/welcomeHeroPage";
 function App() {
   return (
     <>
-      <HeroWelcomePage/>
+      <HeroWelcomePage />
       <WhatIDoPage />
       <AboutMePage id="about" />
       <RecentProjects id="rp" />
