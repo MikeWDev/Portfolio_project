@@ -252,10 +252,9 @@ Greys:
 /*##############
 ###RP-SECTION###
 ################*/
-/* .rp-section {
-  margin-top: 6.4rem;
-  margin-bottom: 6.4rem;
-} */
+.grid-rp {
+  row-gap: 6.4rem;
+}
 .rp-section {
   height: calc(100vh);
   padding-top: 6rem;

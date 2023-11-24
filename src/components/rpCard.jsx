@@ -4,30 +4,34 @@ import ButtonFull from "./buttonFull";
 function RpCard(props) {
   return (
     <>
-      <div className="rp-card rp-card--grid">
-        <div className="rp-img">
-          <img src="" alt="picture of the webstie" />
+      <div className="rp-card">
+        <div className="rp-card-title">
+          <h1>Omnifood</h1>
         </div>
-        <div className="rp-title">
-          <h3>COSTAM</h3>
+        <div className="rp-card-img">
+          <img
+            alt="picture of the website"
+            className="image"
+            src={props.webImg}
+          ></img>
+          <div className="rp-tags-overlap">
+            <div className="tags-con">
+              <Tag tagName="HTML" />
+              <Tag tagName="CSS" />
+              <Tag tagName="JavaScript" />
+              <Tag tagName="React.js" />
+              <Tag tagName="Node.js" />
+            </div>
+          </div>
         </div>
+        <div className="rp-card-button-container">
+          <a>
+            <ButtonFull class="btn-rp--card btn--hover" text="Visit website" />
+          </a>
 
-        <div className="rp-tags">
-          <Tag tagName="JavaScript" />
-          <Tag tagName="React" />
-          <Tag tagName="Css" />
-          <Tag tagName="MongoDB" />
-          <Tag tagName="Heroku" />
-        </div>
-        {/* <div className="rp-disc">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vero
-            natus ut dolorem, recusandae rerum quae illo
-          </p>
-        </div> */}
-        <div className="rp-btn--con">
-          <ButtonFull class="rp-btn--style btn--hover " text="Visit website" />
-          <ButtonFull class="rp-btn--style btn--hover" text="See the code" />
+          <a>
+            <ButtonFull class="btn-rp--card btn--hover" text="See the code" />
+          </a>
         </div>
       </div>
     </>

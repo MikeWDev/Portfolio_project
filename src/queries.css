@@ -92,6 +92,21 @@
 ### Smaller tablets 700px###
 ####################*/
 @media (max-width: 43em) {
+  .rp-card {
+    width: 70%;
+  }
+  .tag-container p {
+    font-size: 3.2rem;
+  }
+  .btn-rp--card {
+    font-size: 2.4rem;
+  }
+  .rp-card-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
   .contact-details {
     font-size: 2.4rem;
     font-family: inherit;

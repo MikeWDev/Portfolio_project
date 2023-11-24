@@ -277,54 +277,94 @@ ion-icon {
 /*##############
 ###RP-CARD###
 ################*/
+.rp-card-title {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+  background-color: rgba(116, 12, 220, 0.6);
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 
-.rp-card--grid {
-  grid-template-rows: 1.5fr 0.5fr 0.5fr 1.5fr;
-  row-gap: 2rem;
-}
-.rp-disc p {
-  color: #fff;
-  font-size: 1.4rem;
-}
-.rp-title h3 {
-  color: #fff;
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
+  transition: 0.5s ease;
 }
 .rp-card {
-  border: solid 1px #740cdc;
-
-  margin-top: 2rem;
-  border-radius: 10px;
-  background-color: rgba(116, 12, 220, 0.137);
+  position: relative;
 }
-.rp-img {
-  display: flex;
-  align-items: stretch;
+.rp-card-img img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
-.rp-btn--con {
+.rp-card-img {
+  position: relative;
+}
+.rp-tags-overlap {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  display: grid;
+  padding: 2rem;
+}
+.tags-con {
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  z-index: -1;
+}
+.rp-card:hover .image {
+  opacity: 0.3;
+}
+.rp-card:hover .rp-tags-overlap {
+  opacity: 1;
+}
+.rp-card:hover .rp-tags-overlap {
+  opacity: 1;
+}
+.rp-card:hover .rp-card-title {
+  opacity: 1;
+}
+.rp-card:hover .rp-card-button-container {
+  opacity: 1;
+}
+.rp-card-button-container {
+  background-color: rgba(116, 12, 220, 0.6);
   display: flex;
-  gap: 1rem;
-  margin: 1rem;
   justify-content: space-around;
-  margin-top: 2.4rem;
-}
-.rp-btn--style {
-  background-color: #740cdc;
-  border-radius: 10px;
-  color: #fff;
   padding: 1rem;
-  border: none;
-  font-weight: 700;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  z-index: 9999;
+  transition: 0.5s ease;
 }
-.grid-rp {
-  margin-top: 10px;
+.btn-rp--card {
+  background-color: #740cdc;
+  color: #fff;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border-radius: 15px;
+  font-family: inherit;
+  font-weight: 700;
+  border-style: none;
+  cursor: pointer;
+  display: block;
 }
 /*##############
 ###RP-TAG###
 ################*/
 .tag-container p {
-  background-color: rgba(116, 12, 220, 0.194);
+  background-color: rgba(116, 12, 220, 0.596);
   border-radius: 10px;
   color: #fff;
   display: inline-block;
@@ -332,6 +372,11 @@ ion-icon {
   font-family: inherit;
   margin-bottom: 1.2rem;
   border: #740cdc 1px solid;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.tag-container {
+  height: fit-content;
 }
 .rp-tags {
   display: flex;
