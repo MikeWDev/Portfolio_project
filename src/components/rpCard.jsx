@@ -25,7 +25,7 @@ function RpCard(props) {
           </div>
         </div>
         <div className="rp-card-button-container">
-          <a>
+          <a href="">
             <ButtonFull class="btn-rp--card btn--hover" text="Visit website" />
           </a>
 
