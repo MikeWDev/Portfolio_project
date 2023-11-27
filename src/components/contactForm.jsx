@@ -73,7 +73,7 @@ function ContactForm() {
               <textarea
                 id="message"
                 name="message"
-                cols="40"
+                cols="30"
                 rows="5"
                 placeholder="Your message"
               ></textarea>
